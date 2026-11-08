@@ -1554,15 +1554,36 @@ namespace Platformer.Mechanics
         /// Hides the character, plays <see cref="spawnEffect"/> at its feet and shows the
         /// character again once the flame has risen over it. Call right after teleporting.
         /// </summary>
-        public void PlaySpawnEffect()
+        /// <param name="holdControl">Keep input off until the character shows (game start;
+        /// a respawn already holds input through its own timer).</param>
+        public void PlaySpawnEffect(bool holdControl = false)
         {
             if (spawnEffect == null) return;
-            if (spawnEffectRoutine != null) StopCoroutine(spawnEffectRoutine);
-            spawnEffectRoutine = StartCoroutine(SpawnEffectRoutine());
+            if (spawnEffectRoutine != null)
+            {
+                // Show the character again first, or the new run would record it as hidden.
+                StopCoroutine(spawnEffectRoutine);
+                RestoreSpawnHidden();
+            }
+            spawnEffectRoutine = StartCoroutine(SpawnEffectRoutine(holdControl));
         }
 
-        private IEnumerator SpawnEffectRoutine()
+        private SpriteRenderer[] spawnHiddenRenderers;
+        private bool[] spawnHiddenWasOn;
+
+        private void RestoreSpawnHidden()
         {
+            if (spawnHiddenRenderers == null) return;
+            for (int i = 0; i < spawnHiddenRenderers.Length; i++)
+                if (spawnHiddenRenderers[i] != null) spawnHiddenRenderers[i].enabled = spawnHiddenWasOn[i];
+            spawnHiddenRenderers = null;
+        }
+
+        private IEnumerator SpawnEffectRoutine(bool holdControl)
+        {
+            bool restoreControl = holdControl && controlEnabled;
+            if (restoreControl) controlEnabled = false;
+
             // Child renderers (shadow, weapon bits) go too; only the ones that were on come back.
             var renderers = GetComponentsInChildren<SpriteRenderer>();
             var wasOn = new bool[renderers.Length];
@@ -1571,6 +1592,8 @@ namespace Platformer.Mechanics
                 wasOn[i] = renderers[i].enabled;
                 renderers[i].enabled = false;
             }
+            spawnHiddenRenderers = renderers;
+            spawnHiddenWasOn = wasOn;
 
             // Teleport moves the rigidbody; the collider bounds follow after the physics step.
             yield return new WaitForFixedUpdate();
@@ -1585,8 +1608,8 @@ namespace Platformer.Mechanics
             }
 
             yield return new WaitForSeconds(spawnRevealDelay);
-            for (int i = 0; i < renderers.Length; i++)
-                if (renderers[i] != null) renderers[i].enabled = wasOn[i];
+            RestoreSpawnHidden();
+            if (restoreControl) controlEnabled = true;
             spawnEffectRoutine = null;
         }
 

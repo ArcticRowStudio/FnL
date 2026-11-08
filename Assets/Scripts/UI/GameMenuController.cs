@@ -70,6 +70,7 @@ namespace Platformer.UI
             current = this;
             open = false;
             closePending = false;
+            spawnOnClose = false;
             demoEndRoutine = null;
             if (canvasRoot != null) Destroy(canvasRoot);   // left over from an earlier session
             bossSelect = FindAnyObjectByType<Platformer.Mechanics.DemoBossSelect>();
@@ -84,7 +85,7 @@ namespace Platformer.UI
         {
             bool skip = Application.isEditor && skipTitleInEditor;
             if (showTitleOnStart && !skip) Open(Page.Title);
-            else ShowPage(Page.None);
+            else { ShowPage(Page.None); PlayStartSpawn(); }
         }
 
         void OnDestroy()
@@ -167,7 +168,20 @@ namespace Platformer.UI
             if (page == Page.None && !closePending) Open(Page.Pause);
         }
 
-        public void StartGame() => Close();
+        public void StartGame()
+        {
+            spawnOnClose = true;
+            Close();
+        }
+
+        // Set by START GAME so the character arrives in the respawn flame once the title is gone.
+        bool spawnOnClose;
+
+        static void PlayStartSpawn()
+        {
+            var player = Simulation.GetModel<PlatformerModel>().player;
+            if (player != null) player.PlaySpawnEffect(true);
+        }
         public void Resume() => Close();
 
         void Close()
@@ -183,6 +197,7 @@ namespace Platformer.UI
             AudioListener.pause = false;
             var player = Simulation.GetModel<PlatformerModel>().player;
             if (player != null) player.controlEnabled = savedControl;
+            if (spawnOnClose) { spawnOnClose = false; PlayStartSpawn(); }
         }
 
         public void ShowControls()
