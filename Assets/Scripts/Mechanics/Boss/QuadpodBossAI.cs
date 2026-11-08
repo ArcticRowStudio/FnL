@@ -115,6 +115,11 @@ namespace Platformer.Mechanics.Boss
         public BossState currentState = BossState.Intro;
         public bool autoEngage = true;
 
+        [Header("Lock")]
+        [Tooltip("Starts powered down: no attacks, takes no damage, no health bar, until Unlock() is called (wired to the basement PowerSwitch)")]
+        public bool startLocked = false;
+        public Color offlineTint = new Color(0.32f, 0.35f, 0.4f, 1f);
+
         [Header("Walk Cycle Animation")]
         public Sprite[] walkFramesPhase1;
         public Sprite[] walkFramesPhase2;
@@ -161,6 +166,7 @@ namespace Platformer.Mechanics.Boss
         private float _climbFireTimer = 0f;
         private bool _deathSequenceDone = false;
         private Vector3 _homePosition;
+        private bool _locked;
         private bool _barShown;
         private float _barHoldUntil;
 
@@ -214,7 +220,39 @@ namespace Platformer.Mechanics.Boss
             if (anim != null) anim.enabled = false;
 
             SetupHierarchy();
+
+            _locked = startLocked;
+            if (_locked) isInvulnerable = true;
         }
+
+        public bool IsLocked => _locked;
+
+        /// <summary>
+        /// Powers the boss up: it drops out of its offline pose with the intro landing (slam and
+        /// camera shake) and starts fighting. Does nothing if it was never locked.
+        /// </summary>
+        public void Unlock()
+        {
+            if (!_locked || currentState == BossState.Defeated) return;
+            _locked = false;
+            isInvulnerable = false;
+            SetOfflineLook(false);
+            _hasLandedIntro = false;
+            currentState = BossState.Intro;
+            _stateTimer = 0.5f;
+        }
+
+        private void SetOfflineLook(bool offline)
+        {
+            Color c = offline ? offlineTint : (isPhase2 ? phase2GlowColor : Color.white);
+            if (baseRenderer != null) baseRenderer.color = c;
+            if (turretRenderer != null) turretRenderer.color = c;
+            if (radarRenderer != null) radarRenderer.color = c;
+        }
+
+        public override bool CanTakeDamage(Vector2 hitPosition, Vector2 attackerPosition) => !_locked;
+
+        public override bool BlocksRangedHit(Vector2 hitPosition) => _locked;
 
         // Domain and scene reload are off in this project: entering play mode reuses this instance,
         // so private fields keep whatever the last session (stopped mid-leap, say) left in them, and
@@ -371,6 +409,13 @@ namespace Platformer.Mechanics.Boss
             currentState = BossState.Intro;
             _stateTimer = 0.5f;
 
+            if (_locked)
+            {
+                // Sits powered down where it stands; Unlock() plays the intro landing later.
+                SetOfflineLook(true);
+                return;
+            }
+
             if (CheckGrounded())
             {
                 CompleteIntroLanding();
@@ -401,7 +446,7 @@ namespace Platformer.Mechanics.Boss
                 else if (dx > BarHideDx || dy > BarHideDy) show = false;
             }
             _barShown = show;
-            _healthBar.SetVisible(show || Time.time < _barHoldUntil || currentState == BossState.Defeated);
+            _healthBar.SetVisible(!_locked && (show || Time.time < _barHoldUntil || currentState == BossState.Defeated));
         }
 
         /// <summary>
@@ -411,7 +456,7 @@ namespace Platformer.Mechanics.Boss
         /// </summary>
         public void ResetEncounter()
         {
-            if (currentState == BossState.Defeated || _bossHealth == null) return;
+            if (_locked || currentState == BossState.Defeated || _bossHealth == null) return;
             if (_bossHealth.CurrentHP >= _bossHealth.maxHP && !isPhase2) return;
 
             StopAllCoroutines();
@@ -497,7 +542,7 @@ namespace Platformer.Mechanics.Boss
             FindPlayer();
             UpdateHealthBarVisibility();
 
-            if (currentState == BossState.Defeated) return;
+            if (_locked || currentState == BossState.Defeated) return;
 
             switch (currentState)
             {
@@ -1557,7 +1602,7 @@ namespace Platformer.Mechanics.Boss
 
         protected override void OnCollisionEnter2D(Collision2D collision)
         {
-            if (currentState == BossState.Defeated) return;
+            if (_locked || currentState == BossState.Defeated) return;
 
             var player = collision.gameObject.GetComponent<PlayerController>();
             if (player != null)

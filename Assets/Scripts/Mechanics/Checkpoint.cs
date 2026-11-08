@@ -84,16 +84,18 @@ namespace Platformer.Mechanics
         float t;
         Vector3 start;
 
-        public static void Spawn(Vector3 position)
+        public static void Spawn(Vector3 position) => Spawn(position, "CHECKPOINT", new Color(0.55f, 1f, 0.6f, 1f));
+
+        public static void Spawn(Vector3 position, string message, Color color)
         {
-            var go = new GameObject("CheckpointLabel");
+            var go = new GameObject("FloatingLabel");
             go.transform.position = position;
             var label = go.AddComponent<CheckpointLabel>();
             label.text = go.AddComponent<TextMeshPro>();
-            label.text.text = "CHECKPOINT";
+            label.text.text = message;
             label.text.fontSize = 4f;
             label.text.alignment = TextAlignmentOptions.Center;
-            label.text.color = new Color(0.55f, 1f, 0.6f, 1f);
+            label.text.color = color;
             label.text.sortingOrder = 500;
             label.start = position;
         }
