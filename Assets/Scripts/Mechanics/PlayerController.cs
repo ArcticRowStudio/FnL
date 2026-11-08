@@ -133,6 +133,10 @@ namespace Platformer.Mechanics
         public float warpCost = 30f;
         // Minimum delay between two warps.
         public float warpCooldown = 0.15f;
+        [Tooltip("Warps allowed in mid-air before the player touches the ground, a ladder/rope or a swing rope again. Stops chained warps from flying over the level. 3 is the least the current level allows: the cannon catwalks sit ~9.5 above the cannon-level floor with no ladder, so 2 leaves both cannon buttons out of reach.")]
+        public int maxAirWarps = 3;
+        private int airWarpsUsed;
+        public int AirWarpsLeft => Mathf.Max(0, maxAirWarps - airWarpsUsed);
         // Invincibility granted on arrival.
         public float warpInvincibility = 0.2f;
         public bool isInvincible = false;
@@ -236,6 +240,7 @@ namespace Platformer.Mechanics
 
         void Awake()
         {
+            airWarpsUsed = 0;   // domain reload is off: the count would survive a stopped session
             health = GetComponent<Health>();
             audioSource = GetComponent<AudioSource>();
             collider2d = GetComponent<Collider2D>();
@@ -329,6 +334,8 @@ namespace Platformer.Mechanics
             {
                 climbCooldownTimer -= Time.deltaTime;
             }
+            // Touching anything to stand or hang on gives the air warps back.
+            if ((IsGrounded && !isWarpingDash) || isClimbing || isSwinging) airWarpsUsed = 0;
 
             if (controlEnabled)
             {
@@ -1160,6 +1167,13 @@ namespace Platformer.Mechanics
                 return;
             }
 
+            bool airborne = !IsGrounded && !isClimbing && !isSwinging;
+            if (airborne && airWarpsUsed >= maxAirWarps)
+            {
+                OnWarpDenied();
+                return;
+            }
+
             Vector2 direction = GetWarpDirection();
             Vector2 origin = body.position;
 
@@ -1173,6 +1187,7 @@ namespace Platformer.Mechanics
 
             stamina.TrySpend(warpCost);
             warpCooldownTimer = warpCooldown;
+            if (airborne) airWarpsUsed++;
 
             if (isClimbing)
             {

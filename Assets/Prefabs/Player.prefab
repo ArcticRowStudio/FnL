@@ -95,6 +95,7 @@ MonoBehaviour:
   warpDistance: 2.5
   warpCost: 30
   warpCooldown: 0.15
+  maxAirWarps: 3
   warpInvincibility: 0.2
   isInvincible: 0
   hurtInvincibilityDuration: 1
