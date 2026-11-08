@@ -221,7 +221,7 @@ namespace Platformer.Mechanics
                 Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0f, 0.9f, 0f));
                 if (screenPos.z > 0)
                 {
-                    float width = 110f;
+                    float width = 140f;
                     float height = 26f;
                     Rect rect = new Rect(screenPos.x - width * 0.5f, Screen.height - screenPos.y - height * 0.5f, width, height);
 
@@ -235,7 +235,7 @@ namespace Platformer.Mechanics
                         fontStyle = FontStyle.Bold
                     };
                     textStyle.normal.textColor = Color.yellow;
-                    GUI.Label(rect, "[E] 승강기 호출", textStyle);
+                    GUI.Label(rect, "[E] CALL LIFT", textStyle);
                 }
             }
         }

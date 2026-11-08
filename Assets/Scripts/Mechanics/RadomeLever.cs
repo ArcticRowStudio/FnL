@@ -285,7 +285,7 @@ namespace Platformer.Mechanics
             Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0f, 1.6f, 0f));
             if (screenPos.z <= 0) return;
 
-            float width = 120f;
+            float width = 150f;
             float height = 28f;
             Rect rect = new Rect(screenPos.x - width * 0.5f, Screen.height - screenPos.y - height * 0.5f, width, height);
 
@@ -299,7 +299,7 @@ namespace Platformer.Mechanics
                 fontStyle = FontStyle.Bold
             };
             textStyle.normal.textColor = Color.yellow;
-            GUI.Label(rect, shutter.IsOpen ? "[E] 레버 올리기" : "[E] 레버 당기기", textStyle);
+            GUI.Label(rect, shutter.IsOpen ? "[E] RAISE LEVER" : "[E] PULL LEVER", textStyle);
         }
 
         private void OnDrawGizmosSelected()

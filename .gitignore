@@ -40,8 +40,10 @@ sysinfo.txt
 crashlytics-build.properties
 
 # ---- Project specific ----
-# Source art kept outside git (back it up separately)
-/ArtSource/
+# Source art kept outside git (back it up separately) - except the basement layout, which is a
+# build input for Tools/build-basement.py, not art.
+/ArtSource/*
+!/ArtSource/basement_layout.json
 # Scratch work and one-off previews
 /scratch/
 /scratch_*.png

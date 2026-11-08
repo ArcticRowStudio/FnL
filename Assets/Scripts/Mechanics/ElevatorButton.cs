@@ -301,11 +301,11 @@ namespace Platformer.Mechanics
                 Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0f, 0.6f, 0f));
                 if (screenPos.z > 0)
                 {
-                    float width = 120f;
+                    float width = 150f;
                     float height = 28f;
                     Rect rect = new Rect(screenPos.x - width * 0.5f, Screen.height - screenPos.y - height * 0.5f, width, height);
 
-                    string promptText = (action == ButtonAction.CallToCurrentFloor) ? "[E] 호출" : "[E] 승강기 작동";
+                    string promptText = (action == ButtonAction.CallToCurrentFloor) ? "[E] CALL LIFT" : "[E] RUN LIFT";
                     
                     GUI.backgroundColor = new Color(0.1f, 0.15f, 0.2f, 0.85f);
                     GUI.Box(rect, GUIContent.none);

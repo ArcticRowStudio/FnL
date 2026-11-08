@@ -833,11 +833,11 @@ namespace Platformer.Mechanics
             Vector3 screenPos = Camera.main.WorldToScreenPoint(promptPos);
             if (screenPos.z <= 0) return;
 
-            string text = !isHolding ? "[F] 줄 잡기"
-                        : hangOnly ? "[F / Space] 뛰어내리기"
-                        : "[F / Space] 놓기 (멀리 도약!)   [A/D] 반동 넣기";
+            string text = !isHolding ? "[F] GRAB"
+                        : hangOnly ? "[F / SPACE] DROP"
+                        : "[F / SPACE] LET GO   [A/D] SWING";
 
-            float width = isHolding ? (hangOnly ? 150f : 250f) : 100f;
+            float width = isHolding ? (hangOnly ? 150f : 260f) : 100f;
             float height = 26f;
             Rect rect = new Rect(screenPos.x - width * 0.5f, Screen.height - screenPos.y - height * 0.5f, width, height);
 

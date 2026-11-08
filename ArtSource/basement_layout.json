@@ -1,0 +1,46 @@
+{
+  "comment": "Basement under the main level. Units are world units; x right from the basement's left edge, y DOWN from its top edge. (0,0) is world (3.2, -17.64), the bottom-left corner of backdrop_1_0. Rebuild the art with Tools/build-basement.py, then the scene with Tools > Level > Rebuild Basement From Layout.",
+  "origin_world": [3.2, -17.64],
+  "size": [153.6, 19.2],
+  "confiner_bottom_world": -5.0,
+  "canvas_overlap_px": 600,
+  "shaft_hole": [1.05, 9.05],
+  "solids": [
+    {"name": "wall_left",        "rect": [0.0,    0.0,  1.05,   19.2]},
+    {"name": "wall_right",       "rect": [152.55, 0.0,  153.6,  19.2]},
+    {"name": "ceiling",          "rect": [9.05,   0.0,  152.55, 1.2]},
+    {"name": "shaft_column",     "rect": [9.05,   1.2,  10.05,  12.0]},
+    {"name": "floor_west",       "rect": [1.05,   16.8, 48.0,   19.2]},
+    {"name": "trench_floor",     "rect": [48.0,   18.0, 62.0,   19.2]},
+    {"name": "floor_east",       "rect": [62.0,   16.8, 152.55, 19.2]},
+
+    {"name": "c0_platform_low",  "rect": [13.0,   12.6, 24.5,   13.8]},
+    {"name": "c0_platform_high", "rect": [26.5,   8.0,  37.35,  9.2]},
+    {"name": "c0_hanging_wall",  "rect": [17.0,   1.2,  18.0,   5.0]},
+    {"name": "c0_step",          "rect": [32.5,   14.8, 37.35,  16.8]},
+    {"name": "divider_0_1",      "rect": [37.35,  1.2,  38.4,   12.0]},
+
+    {"name": "c1_hanging_wall",  "rect": [56.0,   1.2,  57.0,   6.0]},
+    {"name": "c1_block",         "rect": [64.0,   15.0, 68.0,   16.8]},
+    {"name": "catwalk",          "rect": [70.0,   11.4, 108.0,  12.2]},
+    {"name": "c2_hanging_wall_a","rect": [86.0,   1.2,  87.0,   7.0]},
+    {"name": "c2_hanging_wall_b","rect": [99.0,   1.2,  100.0,  7.0]},
+
+    {"name": "c3_terrace_1",     "rect": [120.0,  15.0, 152.55, 16.8]},
+    {"name": "c3_terrace_2",     "rect": [128.0,  13.2, 152.55, 15.0]},
+    {"name": "c3_terrace_3",     "rect": [136.0,  11.4, 152.55, 13.2]},
+    {"name": "c3_terrace_4",     "rect": [144.0,  9.6,  152.55, 11.4]},
+    {"name": "c3_hanging_wall",  "rect": [126.0,  1.2,  127.0,  5.0]}
+  ],
+  "ladders": [
+    {"name": "Basement_Ladder_Floor_To_Low",     "x": 12.0, "bottom": 16.8, "top": 12.6},
+    {"name": "Basement_Ladder_Floor_To_High",    "x": 25.5, "bottom": 16.8, "top": 8.0},
+    {"name": "Basement_Ladder_Floor_To_Catwalk", "x": 69.0, "bottom": 16.8, "top": 11.4}
+  ],
+  "lamps": [
+    {"x": 15.0, "y": 2.0}, {"x": 31.0, "y": 2.0},
+    {"x": 47.0, "y": 2.0}, {"x": 66.0, "y": 2.0},
+    {"x": 80.0, "y": 2.0}, {"x": 93.0, "y": 2.0}, {"x": 108.0, "y": 2.0},
+    {"x": 120.0, "y": 2.0}, {"x": 140.0, "y": 2.0}
+  ]
+}

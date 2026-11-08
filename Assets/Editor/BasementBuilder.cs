@@ -54,7 +54,8 @@ namespace Platformer.EditorTools
 
             var expansion = GameObject.Find("Level_Expansion");
             var backdrop = GameObject.Find("backdrop_1_0");
-            var ladderTemplate = GameObject.Find("Demo_Ladder");
+            // Renamed from Demo_Ladder on 2026-11-08; the old name is kept as a fallback.
+            var ladderTemplate = GameObject.Find("CannonL_Ladder") ?? GameObject.Find("Demo_Ladder");
             var lampTemplate = GameObject.Find("Corridor_Lamp_166");
             if (expansion == null || backdrop == null) return "Level_Expansion or backdrop_1_0 is missing from the open scene.";
 
