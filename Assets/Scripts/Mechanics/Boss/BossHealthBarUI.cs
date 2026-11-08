@@ -94,7 +94,10 @@ namespace Platformer.Mechanics.Boss
 
         private void BuildUI()
         {
-            Canvas canvas = FindAnyObjectByType<Canvas>();
+            // Boss bars share one canvas of their own. Picking up any canvas could land them on the
+            // menu overlay, drawn over the title and pause screens.
+            var existing = GameObject.Find("BossUICanvas");
+            Canvas canvas = existing != null ? existing.GetComponent<Canvas>() : null;
             if (canvas == null)
             {
                 GameObject canvasObj = new GameObject("BossUICanvas");

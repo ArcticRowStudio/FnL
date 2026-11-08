@@ -17,7 +17,7 @@ namespace Platformer.Mechanics.Boss
         /// <summary>Resets every live boss fight in the loaded scenes.</summary>
         public static void ResetAll()
         {
-            foreach (var mb in Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
+            foreach (var mb in Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude))
                 if (mb is IBossEncounter boss) boss.ResetEncounter();
         }
     }
