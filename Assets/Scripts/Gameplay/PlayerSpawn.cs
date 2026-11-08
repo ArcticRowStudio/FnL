@@ -26,6 +26,7 @@ namespace Platformer.Gameplay
             if (player.Stamina != null) player.Stamina.Refill();
             player.RefillAmmo();
             player.Teleport(model.spawnPoint.transform.position);
+            player.PlaySpawnEffect();
             player.jumpState = PlayerController.JumpState.Grounded;
             player.animator.SetBool("dead", false);
             model.virtualCamera.Follow = player.transform;

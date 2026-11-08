@@ -76,6 +76,14 @@ namespace Platformer.Mechanics
         // behind the body. Firing the arc on the trigger put it in mid air before the blade
         // had moved, so it is held back until the blade actually sweeps through in front.
         public float slashEffectDelay = 0.32f;
+
+        [Header("Respawn")]
+        [Tooltip("Blue flame column played at the feet when the player respawns.")]
+        public SpriteSequenceEffect spawnEffect;
+        [Tooltip("Seconds into the spawn effect before the character becomes visible (the flame's peak covers the pop-in).")]
+        public float spawnRevealDelay = 0.6f;
+        private Coroutine spawnEffectRoutine;
+
         private float meleeCooldownTimer;
         private int meleeComboIndex;
         private float meleeComboExpiry;
@@ -445,6 +453,7 @@ namespace Platformer.Mechanics
                     if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
                     {
                         TryShoot();
+            AtmospherePostProcessController.TriggerGunfireFlash();
                     }
                 }
                 else if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
@@ -909,6 +918,7 @@ namespace Platformer.Mechanics
 
             // Slight camera shake
             CameraZoomController.TriggerShake(0.08f, 0.06f);
+            AtmospherePostProcessController.TriggerGuardPulse();
 
             // Crisp metallic block sound feedback
             if (audioSource && jumpAudio)
@@ -1006,6 +1016,7 @@ namespace Platformer.Mechanics
 
             // Camera shake on parry impact
             CameraZoomController.TriggerShake(0.18f, 0.12f);
+            AtmospherePostProcessController.TriggerParryFlash();
 
             // Crisp "Clink / Parry" sound feedback
             if (audioSource && jumpAudio)
@@ -1215,6 +1226,7 @@ namespace Platformer.Mechanics
                 trail = gameObject.AddComponent<WarpTrail>();
             }
             trail.SpawnWarpTrail(origin, destination);
+            AtmospherePostProcessController.TriggerWarpPulse();
 
             ProjectileDebris.SpawnSpark(origin, new Color(0.5f, 0.8f, 1f), 8, 5f);
 
@@ -1401,6 +1413,7 @@ namespace Platformer.Mechanics
             if (!infiniteHealth)
             {
                 for (int i = 0; i < Mathf.Max(1, amount) && health.IsAlive; i++) health.Decrement();
+                AtmospherePostProcessController.TriggerDamageFlash();
             }
 
             if (health.IsAlive)
@@ -1535,6 +1548,46 @@ namespace Platformer.Mechanics
             Vector2 centre = collider2d.bounds.center;
             Vector2 at = centre + new Vector2((faceRight ? 1f : -1f) * slashEffectOffset.x, slashEffectOffset.y);
             SpriteSequenceEffect.SpawnMirrored(slashEffect, at, faceRight);
+        }
+
+        /// <summary>
+        /// Hides the character, plays <see cref="spawnEffect"/> at its feet and shows the
+        /// character again once the flame has risen over it. Call right after teleporting.
+        /// </summary>
+        public void PlaySpawnEffect()
+        {
+            if (spawnEffect == null) return;
+            if (spawnEffectRoutine != null) StopCoroutine(spawnEffectRoutine);
+            spawnEffectRoutine = StartCoroutine(SpawnEffectRoutine());
+        }
+
+        private IEnumerator SpawnEffectRoutine()
+        {
+            // Child renderers (shadow, weapon bits) go too; only the ones that were on come back.
+            var renderers = GetComponentsInChildren<SpriteRenderer>();
+            var wasOn = new bool[renderers.Length];
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                wasOn[i] = renderers[i].enabled;
+                renderers[i].enabled = false;
+            }
+
+            // Teleport moves the rigidbody; the collider bounds follow after the physics step.
+            yield return new WaitForFixedUpdate();
+            Bounds body = collider2d.bounds;
+            var feet = new Vector3(body.center.x, body.min.y, transform.position.z);
+            var fx = Instantiate(spawnEffect, feet, Quaternion.identity);
+            var fxRenderer = fx.GetComponent<SpriteRenderer>();
+            if (fxRenderer != null && spriteRenderer != null)
+            {
+                fxRenderer.sortingLayerID = spriteRenderer.sortingLayerID;
+                fxRenderer.sortingOrder = spriteRenderer.sortingOrder + 1;
+            }
+
+            yield return new WaitForSeconds(spawnRevealDelay);
+            for (int i = 0; i < renderers.Length; i++)
+                if (renderers[i] != null) renderers[i].enabled = wasOn[i];
+            spawnEffectRoutine = null;
         }
 
         private IEnumerator MeleeHitRoutine(bool thrust, float windup)
