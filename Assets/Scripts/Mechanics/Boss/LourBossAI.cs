@@ -110,6 +110,13 @@ namespace Platformer.Mechanics.Boss
         private bool _isActionLocked = false;
         private bool _isInvincible = false;
         private Vector3 _homePosition;
+        private bool _barShown;
+        private float _barHoldUntil;
+
+        // The bar is up while the player is inside the detection radius (with some slack before it
+        // drops) and for a few seconds after any hit, so long-range sniper damage still shows.
+        private const float BarHideSlack = 5f;
+        private const float BarHoldAfterHit = 5f;
 
         protected override void Awake()
         {
@@ -189,6 +196,17 @@ namespace Platformer.Mechanics.Boss
                 "LOUR // SPEC-OPS RECON SNIPER",
                 "PHASE 1: TACTICAL RECON",
                 "PHASE 2: OVERCLOCKED ACCELERATION [CRITICAL]");
+            _barShown = false;
+            _barHoldUntil = 0f;
+            _healthBar.SetVisible(false, instant: true);
+        }
+
+        private void UpdateHealthBarVisibility(float distToPlayer)
+        {
+            if (_healthBar == null) return;
+            if (distToPlayer <= detectionRadius) _barShown = true;
+            else if (distToPlayer > detectionRadius + BarHideSlack) _barShown = false;
+            _healthBar.SetVisible(_barShown || Time.time < _barHoldUntil || currentState == BossState.Defeated);
         }
 
         /// <summary>
@@ -235,6 +253,9 @@ namespace Platformer.Mechanics.Boss
 
         private void HandleHealthChanged(Health h)
         {
+            if (h.CurrentHP < h.maxHP) _barHoldUntil = Time.time + BarHoldAfterHit;
+            // Update stops once defeated, so show the emptied bar from here.
+            if (!h.IsAlive && _healthBar != null) _healthBar.SetVisible(true);
             if (!isPhase2 && h.CurrentHP <= h.maxHP * 0.5f)
             {
                 isPhase2 = true;
@@ -279,6 +300,7 @@ namespace Platformer.Mechanics.Boss
 
             float distToPlayer = Vector2.Distance(transform.position, _playerTransform.position);
             float xDiff = _playerTransform.position.x - transform.position.x;
+            UpdateHealthBarVisibility(distToPlayer);
 
             // Cooldowns
             _sniperTimer -= Time.deltaTime;

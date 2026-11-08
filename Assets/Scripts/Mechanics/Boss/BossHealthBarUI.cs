@@ -45,6 +45,9 @@ namespace Platformer.Mechanics.Boss
         private RectTransform frameRect;
         private GameObject defaultMarker;
         private bool statusLocked;
+        private CanvasGroup group;
+        private bool visible = true;
+        private const float FadeSpeed = 4f;   // alpha per second
 
         public void Bind(QuadpodBossAI boss, Health bossHealth)
         {
@@ -109,6 +112,10 @@ namespace Platformer.Mechanics.Boss
 
             rootUI = new GameObject("BossHealthBarRoot");
             rootUI.transform.SetParent(canvas.transform, false);
+            group = rootUI.AddComponent<CanvasGroup>();
+            group.interactable = false;
+            group.blocksRaycasts = false;
+            group.alpha = visible ? 1f : 0f;
 
             RectTransform rootRect = rootUI.AddComponent<RectTransform>();
             rootRect.anchorMin = new Vector2(0.5f, 1f);
@@ -236,6 +243,16 @@ namespace Platformer.Mechanics.Boss
             if (subtitleText != null) subtitleText.text = text;
         }
 
+        /// <summary>
+        /// Fades the bar in or out, for bosses that sit in the level before their fight.
+        /// <paramref name="instant"/> skips the fade.
+        /// </summary>
+        public void SetVisible(bool show, bool instant = false)
+        {
+            visible = show;
+            if (instant && group != null) group.alpha = show ? 1f : 0f;
+        }
+
         /// <summary>Takes the bar down while the boss is still alive.</summary>
         public void Dismiss(float delay)
         {
@@ -244,6 +261,9 @@ namespace Platformer.Mechanics.Boss
 
         private void Update()
         {
+            if (group != null)
+                group.alpha = Mathf.MoveTowards(group.alpha, visible ? 1f : 0f, Time.unscaledDeltaTime * FadeSpeed);
+
             if (health == null || !health.IsAlive)
             {
                 if (rootUI != null && targetHealthRatio <= 0f)

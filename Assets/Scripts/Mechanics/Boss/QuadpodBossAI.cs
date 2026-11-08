@@ -161,6 +161,14 @@ namespace Platformer.Mechanics.Boss
         private float _climbFireTimer = 0f;
         private bool _deathSequenceDone = false;
         private Vector3 _homePosition;
+        private bool _barShown;
+        private float _barHoldUntil;
+
+        // The bar is up while the player is in the fight (the same range ground combat chases in,
+        // with some slack before it drops) and for a few seconds after any hit, so long-range
+        // sniper damage still shows.
+        private const float BarShowDx = 22f, BarShowDy = 12f, BarHideDx = 27f, BarHideDy = 15f;
+        private const float BarHoldAfterHit = 5f;
 
         // Hold off EnemyDeath (scheduled by whichever weapon lands the last hit) until the defeat
         // sequence has played; otherwise it destroys the boss 0.12 s into the explosions.
@@ -376,6 +384,24 @@ namespace Platformer.Mechanics.Boss
             GameObject barObj = new GameObject("QuadpodBoss_HealthBarUI");
             _healthBar = barObj.AddComponent<BossHealthBarUI>();
             _healthBar.Bind(this, _bossHealth);
+            _barShown = false;
+            _barHoldUntil = 0f;
+            _healthBar.SetVisible(false, instant: true);
+        }
+
+        private void UpdateHealthBarVisibility()
+        {
+            if (_healthBar == null) return;
+            bool show = _barShown;
+            if (_player != null)
+            {
+                float dx = Mathf.Abs(_player.transform.position.x - transform.position.x);
+                float dy = Mathf.Abs(_player.transform.position.y - transform.position.y);
+                if (dx < BarShowDx && dy < BarShowDy) show = true;
+                else if (dx > BarHideDx || dy > BarHideDy) show = false;
+            }
+            _barShown = show;
+            _healthBar.SetVisible(show || Time.time < _barHoldUntil || currentState == BossState.Defeated);
         }
 
         /// <summary>
@@ -441,6 +467,7 @@ namespace Platformer.Mechanics.Boss
         {
             if (h == null || currentState == BossState.Defeated) return;
 
+            if (h.CurrentHP < h.maxHP) _barHoldUntil = Time.time + BarHoldAfterHit;
             StartCoroutine(DamageFlashRoutine());
 
             if (!isPhase2 && h.CurrentHP <= (h.maxHP / 2))
@@ -468,6 +495,7 @@ namespace Platformer.Mechanics.Boss
         protected override void Update()
         {
             FindPlayer();
+            UpdateHealthBarVisibility();
 
             if (currentState == BossState.Defeated) return;
 
