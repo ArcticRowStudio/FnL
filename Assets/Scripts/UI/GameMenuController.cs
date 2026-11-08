@@ -37,7 +37,7 @@ namespace Platformer.UI
         static GameMenuController current;
         bool open;
 
-        enum Page { None, Title, Pause, Controls }
+        enum Page { None, Title, Pause, Controls, DemoEnd }
 
         static readonly string[,] ControlRows =
         {
@@ -56,18 +56,20 @@ namespace Platformer.UI
 
         Page page = Page.None;
         Page controlsReturnTo = Page.Pause;
-        GameObject canvasRoot, overlay, titlePage, pausePage, controlsPage;
+        GameObject canvasRoot, overlay, titlePage, pausePage, controlsPage, demoEndPage;
         Image overlayImage;
-        Button titleFirst, pauseFirst, controlsFirst;
+        Button titleFirst, pauseFirst, controlsFirst, demoEndFirst;
         InputAction menuAction;
         bool savedControl = true;
         bool closePending;
+        Coroutine demoEndRoutine;
 
         void Awake()
         {
             current = this;
             open = false;
             closePending = false;
+            demoEndRoutine = null;
             if (canvasRoot != null) Destroy(canvasRoot);   // left over from an earlier session
             BuildUI();
             menuAction = InputSystem.actions != null ? InputSystem.actions.FindAction("Player/Menu") : null;
@@ -132,9 +134,27 @@ namespace Platformer.UI
                 if (player != null) { savedControl = player.controlEnabled; player.controlEnabled = false; }
                 Time.timeScale = 0f;
             }
-            // The title keeps the music going; the pause menu holds everything.
+            // The title and the demo-end card keep the music going; the pause menu holds everything.
             AudioListener.pause = target == Page.Pause;
             ShowPage(target);
+        }
+
+        /// <summary>
+        /// Shows the END OF DEMO card after <paramref name="delay"/> real seconds (the boss's
+        /// defeat plays out first). Wired to VtolBossAI.onEscaped in the scene.
+        /// </summary>
+        public void ShowDemoEndAfter(float delay)
+        {
+            if (demoEndRoutine != null || page == Page.DemoEnd) return;
+            demoEndRoutine = StartCoroutine(DemoEndRoutine(delay));
+        }
+
+        System.Collections.IEnumerator DemoEndRoutine(float delay)
+        {
+            yield return new WaitForSecondsRealtime(delay);
+            demoEndRoutine = null;
+            closePending = false;
+            Open(Page.DemoEnd);
         }
 
         /// <summary>Opens the pause menu, unless a menu screen is already up.</summary>
@@ -195,10 +215,11 @@ namespace Platformer.UI
             titlePage.SetActive(target == Page.Title);
             pausePage.SetActive(target == Page.Pause);
             controlsPage.SetActive(target == Page.Controls);
-            overlayImage.color = new Color(0f, 0f, 0f, target == Page.Title ? 0.6f : 0.72f);
+            demoEndPage.SetActive(target == Page.DemoEnd);
+            overlayImage.color = new Color(0f, 0f, 0f, target == Page.Title ? 0.6f : target == Page.DemoEnd ? 0.85f : 0.72f);
 
             Button first = target == Page.Title ? titleFirst : target == Page.Pause ? pauseFirst
-                : target == Page.Controls ? controlsFirst : null;
+                : target == Page.Controls ? controlsFirst : target == Page.DemoEnd ? demoEndFirst : null;
             if (EventSystem.current != null)
                 EventSystem.current.SetSelectedGameObject(first != null ? first.gameObject : null);
         }
@@ -227,6 +248,27 @@ namespace Platformer.UI
             BuildTitle();
             BuildPause();
             BuildControls();
+            BuildDemoEnd();
+        }
+
+        void BuildDemoEnd()
+        {
+            demoEndPage = NewRect("DemoEnd", overlay.transform);
+            Stretch(demoEndPage);
+
+            var header = Label(demoEndPage.transform, "END OF DEMO", 96, FontStyles.Bold, Color.white);
+            Place(header, new Vector2(0.5f, 0.5f), new Vector2(0f, 200f), new Vector2(1400f, 130f));
+            header.characterSpacing = 10f;
+            var bar = NewRect("AccentBar", demoEndPage.transform);
+            bar.AddComponent<Image>().color = accent;
+            Place(bar, new Vector2(0.5f, 0.5f), new Vector2(0f, 118f), new Vector2(220f, 6f));
+            var sub = Label(demoEndPage.transform, "THANK YOU FOR PLAYING " + gameTitle, 30, FontStyles.Normal, new Color(1f, 1f, 1f, 0.75f));
+            Place(sub, new Vector2(0.5f, 0.5f), new Vector2(0f, 70f), new Vector2(1400f, 44f));
+            sub.characterSpacing = 8f;
+
+            var list = ButtonColumn(demoEndPage.transform, new Vector2(0f, -120f));
+            demoEndFirst = MenuButton(list, "QUIT TO TITLE", QuitToTitle);
+            MenuButton(list, "QUIT GAME", QuitGame);
         }
 
         void BuildTitle()
