@@ -82,6 +82,8 @@ namespace Platformer.Mechanics
         public SpriteSequenceEffect spawnEffect;
         [Tooltip("Seconds into the spawn effect before the character becomes visible (the flame's peak covers the pop-in).")]
         public float spawnRevealDelay = 0.6f;
+        [Tooltip("World-unit nudge from the collider's feet to where the spawn effect sits. Negative y lowers it.")]
+        public Vector2 spawnEffectOffset = new Vector2(0f, -0.3f);
         private Coroutine spawnEffectRoutine;
 
         private float meleeCooldownTimer;
@@ -1598,7 +1600,7 @@ namespace Platformer.Mechanics
             // Teleport moves the rigidbody; the collider bounds follow after the physics step.
             yield return new WaitForFixedUpdate();
             Bounds body = collider2d.bounds;
-            var feet = new Vector3(body.center.x, body.min.y, transform.position.z);
+            var feet = new Vector3(body.center.x + spawnEffectOffset.x, body.min.y + spawnEffectOffset.y, transform.position.z);
             var fx = Instantiate(spawnEffect, feet, Quaternion.identity);
             var fxRenderer = fx.GetComponent<SpriteRenderer>();
             if (fxRenderer != null && spriteRenderer != null)
