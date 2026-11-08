@@ -83,7 +83,7 @@ namespace Platformer.Mechanics
         [Tooltip("Seconds into the spawn effect before the character becomes visible (the flame's peak covers the pop-in).")]
         public float spawnRevealDelay = 0.6f;
         [Tooltip("World-unit nudge from the collider's feet to where the spawn effect sits. Negative y lowers it.")]
-        public Vector2 spawnEffectOffset = new Vector2(0f, -0.3f);
+        public Vector2 spawnEffectOffset = new Vector2(0f, -0.45f);
         private Coroutine spawnEffectRoutine;
 
         private float meleeCooldownTimer;

@@ -82,6 +82,7 @@ MonoBehaviour:
   spawnEffect: {fileID: 5984345465657565160, guid: 1f6bb44584402ae42b68345007bc3b7f,
     type: 3}
   spawnRevealDelay: 0.6
+  spawnEffectOffset: {x: 0, y: -0.45}
   parryDuration: 0.22
   parryCooldown: 0.3
   isParrying: 0
