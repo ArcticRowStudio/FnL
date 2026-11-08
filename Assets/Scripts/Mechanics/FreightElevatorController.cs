@@ -153,8 +153,19 @@ namespace Platformer.Mechanics
         public FloorIndex CurrentFloor => currentFloor;
         public bool HasPassenger => hasPassenger;
 
+        [Header("Power")]
+        [Tooltip("Starts without power: buttons, call stations and E do nothing until SetPowered(true) (e.g. a PowerSwitch)")]
+        public bool startUnpowered = false;
+        private bool powered = true;
+        public bool HasPower => powered;
+
+        /// <summary>Turns the elevator on or off. Unpowered, every request to move is ignored.</summary>
+        public void SetPowered(bool on) => powered = on;
+        public void PowerOn() => SetPowered(true);
+
         private void Awake()
         {
+            powered = !startUnpowered;
             if (cabinTransform == null) cabinTransform = transform;
             initialCabinLocalPos = cabinTransform.localPosition;
 
@@ -314,7 +325,7 @@ namespace Platformer.Mechanics
         /// </summary>
         public void ToggleFloor()
         {
-            if (state != ElevatorState.AtFloor) return;
+            if (!powered || state != ElevatorState.AtFloor) return;
             targetFloor = (currentFloor == FloorIndex.Bottom) ? FloorIndex.Top : FloorIndex.Bottom;
             targetTravelProgress = (targetFloor == FloorIndex.Top) ? 1.0f : 0.0f;
 
@@ -350,7 +361,7 @@ namespace Platformer.Mechanics
         /// </summary>
         public void CallElevatorToFloor(FloorIndex destination)
         {
-            if (state == ElevatorState.Moving) return;
+            if (!powered || state == ElevatorState.Moving) return;
             if (currentFloor == destination && state == ElevatorState.AtFloor)
             {
                 // Already at destination floor; if player is on board, toggle to other floor

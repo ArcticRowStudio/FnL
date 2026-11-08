@@ -235,7 +235,7 @@ namespace Platformer.Mechanics
                         fontStyle = FontStyle.Bold
                     };
                     textStyle.normal.textColor = Color.yellow;
-                    GUI.Label(rect, "[E] CALL LIFT", textStyle);
+                    GUI.Label(rect, elevator != null && !elevator.HasPower ? "NO POWER" : "[E] CALL LIFT", textStyle);
                 }
             }
         }

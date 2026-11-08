@@ -305,7 +305,8 @@ namespace Platformer.Mechanics
                     float height = 28f;
                     Rect rect = new Rect(screenPos.x - width * 0.5f, Screen.height - screenPos.y - height * 0.5f, width, height);
 
-                    string promptText = (action == ButtonAction.CallToCurrentFloor) ? "[E] CALL LIFT" : "[E] RUN LIFT";
+                    string promptText = (elevator != null && !elevator.HasPower) ? "NO POWER"
+                        : (action == ButtonAction.CallToCurrentFloor) ? "[E] CALL LIFT" : "[E] RUN LIFT";
                     
                     GUI.backgroundColor = new Color(0.1f, 0.15f, 0.2f, 0.85f);
                     GUI.Box(rect, GUIContent.none);
