@@ -27,6 +27,8 @@ namespace Platformer.Gameplay
             player.animator.SetBool("dead", false);
             model.virtualCamera.Follow = player.transform;
             model.virtualCamera.LookAt = player.transform;
+            // Cut straight to the respawn point instead of panning across the map.
+            model.virtualCamera.PreviousStateIsValid = false;
             Simulation.Schedule<EnablePlayerInput>(2f);
         }
     }
