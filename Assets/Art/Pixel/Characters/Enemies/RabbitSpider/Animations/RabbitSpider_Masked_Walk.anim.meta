@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: b2000000000000000000000000000002
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RabbitSpider_Masked_Walk
+  serializedVersion: 6
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

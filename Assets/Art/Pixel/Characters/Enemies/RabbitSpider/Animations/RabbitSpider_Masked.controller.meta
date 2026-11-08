@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: c2000000000000000000000000000001
+AnimatorController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RabbitSpider_Masked
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

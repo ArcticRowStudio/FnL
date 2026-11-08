@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: a116cad702207cf4a91abc85ac5d1831
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1954024374420163499
+    second: Whale_Frame_35_0
+  - first:
+      213: 4111550183892090739
+    second: Whale_Frame_35_1
+  - first:
+      213: -5015354780042062440
+    second: Whale_Frame_35_2
+  - first:
+      213: -5425047094582495543
+    second: Whale_Frame_35_3
+  - first:
+      213: 2023547431829757763
+    second: Whale_Frame_35_4
+  - first:
+      213: 1202770106731101677
+    second: Whale_Frame_35_5
+  - first:
+      213: 4236861916611850211
+    second: Whale_Frame_35_6
+  - first:
+      213: 6474391995919040
+    second: Whale_Frame_35_7
+  - first:
+      213: 78160935324193198
+    second: Whale_Frame_35_8
+  - first:
+      213: -3776856933838031054
+    second: Whale_Frame_35_9
+  - first:
+      213: -3465709908872965343
+    second: Whale_Frame_35_10
+  - first:
+      213: -179352877446536570
+    second: Whale_Frame_35_11
+  - first:
+      213: 2246345717769653032
+    second: Whale_Frame_35_12
+  - first:
+      213: -6417913188427293852
+    second: Whale_Frame_35_13
+  - first:
+      213: 6179718518427697791
+    second: Whale_Frame_35_14
+  - first:
+      213: 5130261860201211774
+    second: Whale_Frame_35_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Whale_Frame_35_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 151
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5543b303f29e1e4e0800000000000000
+      internalID: -1954024374420163499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 161
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f741bbb192f0930800000000000000
+      internalID: 4111550183892090739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 114
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89519096661e56ab0800000000000000
+      internalID: -5015354780042062440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_3
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 122
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c635ad196c56b4b0800000000000000
+      internalID: -5425047094582495543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 123
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34fdd540ba5151c10800000000000000
+      internalID: 2023547431829757763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 137
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded7a2e1a0911b010800000000000000
+      internalID: 1202770106731101677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 140
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3efa70e177b5cca30800000000000000
+      internalID: 4236861916611850211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 129
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0caad0bdc60071000800000000000000
+      internalID: 6474391995919040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_8
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 140
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea19f41e4fea51100800000000000000
+      internalID: 78160935324193198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_9
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 137
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237fc1b11a8e59bc0800000000000000
+      internalID: -3776856933838031054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_10
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 122
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1235313333357efc0800000000000000
+      internalID: -3465709908872965343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_11
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 115
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682ea5a128fc28df0800000000000000
+      internalID: -179352877446536570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_12
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 120
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b4166578f9c2f10800000000000000
+      internalID: 2246345717769653032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_13
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 124
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b1f7c65fdfee6a0800000000000000
+      internalID: -6417913188427293852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_14
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 105
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7249ce3045c2c550800000000000000
+      internalID: 6179718518427697791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale_Frame_35_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 101
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7727060bf9523740800000000000000
+      internalID: 5130261860201211774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Whale_Frame_35_0: -1954024374420163499
+      Whale_Frame_35_1: 4111550183892090739
+      Whale_Frame_35_10: -3465709908872965343
+      Whale_Frame_35_11: -179352877446536570
+      Whale_Frame_35_12: 2246345717769653032
+      Whale_Frame_35_13: -6417913188427293852
+      Whale_Frame_35_14: 6179718518427697791
+      Whale_Frame_35_15: 5130261860201211774
+      Whale_Frame_35_2: -5015354780042062440
+      Whale_Frame_35_3: -5425047094582495543
+      Whale_Frame_35_4: 2023547431829757763
+      Whale_Frame_35_5: 1202770106731101677
+      Whale_Frame_35_6: 4236861916611850211
+      Whale_Frame_35_7: 6474391995919040
+      Whale_Frame_35_8: 78160935324193198
+      Whale_Frame_35_9: -3776856933838031054
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,14 @@
+* text=auto
+
+# Binaries
+*.png  binary
+*.jpg  binary
+*.psd  binary
+*.wav  binary
+*.mp3  binary
+*.ogg  binary
+*.ttf  binary
+*.otf  binary
+*.fbx  binary
+*.exr  binary
+*.tga  binary

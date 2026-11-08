@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4419020266081715705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8482940867553378691}
+  - component: {fileID: 7261813611848685101}
+  - component: {fileID: 7601810382894792497}
+  m_Layer: 0
+  m_Name: WarpArrive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8482940867553378691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419020266081715705}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &7261813611848685101
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419020266081715705}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 60
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 393d38cbd90fd0a408039ddc8eea440a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.0208333, y: 2.9375}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!114 &7601810382894792497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419020266081715705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383a92fa22a3ae246b672173ea4385a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Platformer.View.SpriteSequenceEffect
+  frames:
+  - {fileID: 21300000, guid: 393d38cbd90fd0a408039ddc8eea440a, type: 3}
+  - {fileID: 21300000, guid: f417007ddfa140e439cb80d18c6c9be8, type: 3}
+  - {fileID: 21300000, guid: 6b32f2d393bcf4948b1dcaae83082877, type: 3}
+  - {fileID: 21300000, guid: 779eed9d7a1439c47bad737646e5f5fe, type: 3}
+  - {fileID: 21300000, guid: d8b0d96958861fc48b08cae22f219689, type: 3}
+  - {fileID: 21300000, guid: 3a961999e36990241992ca5b048eaf1f, type: 3}
+  - {fileID: 21300000, guid: b199873d1d6903747a7288c623459f95, type: 3}
+  - {fileID: 21300000, guid: a8043cc1e5fc3a5419160fa5a1feb88d, type: 3}
+  - {fileID: 21300000, guid: 4099faed5df7bd5469b0d8e52ac52cb6, type: 3}
+  - {fileID: 21300000, guid: b7aab6638c4eaa54782e84977e6418ed, type: 3}
+  - {fileID: 21300000, guid: 36d2e37800f2da3488f56240fda2918f, type: 3}
+  - {fileID: 21300000, guid: a2df8105a40b5a94b8e30b555a44ef94, type: 3}
+  - {fileID: 21300000, guid: ea3be0176b6a3aa419a81828d39a8b56, type: 3}
+  - {fileID: 21300000, guid: 9d0a508bfcc337346ab9b5a94975c99f, type: 3}
+  framesPerSecond: 38
+  sizeMultiplier: 1.05
+  startDegrees: 0
+  sweepDegrees: 0

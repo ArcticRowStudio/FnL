@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: c2dcfe5135800e94189bf5f9d8cbec26
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -96128383625486488
+    second: Right_Wave_B_0
+  - first:
+      213: -7968487597183649421
+    second: Right_Wave_B_1
+  - first:
+      213: 7006734524168138258
+    second: Right_Wave_B_2
+  - first:
+      213: 6176029378478729268
+    second: Right_Wave_B_3
+  - first:
+      213: 2880261140461198008
+    second: Right_Wave_B_4
+  - first:
+      213: -3212803399304331543
+    second: Right_Wave_B_5
+  - first:
+      213: 5818296377353598716
+    second: Right_Wave_B_6
+  - first:
+      213: 2283246157660172939
+    second: Right_Wave_B_7
+  - first:
+      213: -3307131398183335392
+    second: Right_Wave_B_8
+  - first:
+      213: -7485011118172906243
+    second: Right_Wave_B_9
+  - first:
+      213: -4431562995253684977
+    second: Right_Wave_B_10
+  - first:
+      213: -5287436974624632450
+    second: Right_Wave_B_11
+  - first:
+      213: -6662692125989230626
+    second: Right_Wave_B_12
+  - first:
+      213: -120264437596651339
+    second: Right_Wave_B_13
+  - first:
+      213: -9169131037422705659
+    second: Right_Wave_B_14
+  - first:
+      213: -8055170527783848539
+    second: Right_Wave_B_15
+  - first:
+      213: 3169383668611935149
+    second: Right_Wave_B_16
+  - first:
+      213: 4508742986890526598
+    second: Right_Wave_B_17
+  - first:
+      213: -2694595579736389383
+    second: Right_Wave_B_18
+  - first:
+      213: 5507465148300071436
+    second: Right_Wave_B_19
+  - first:
+      213: -3054910958924282769
+    second: Right_Wave_B_20
+  - first:
+      213: -7760718441661067058
+    second: Right_Wave_B_21
+  - first:
+      213: -1354200481328494337
+    second: Right_Wave_B_22
+  - first:
+      213: 8764173459137491854
+    second: Right_Wave_B_23
+  - first:
+      213: 7954845575578620066
+    second: Right_Wave_B_24
+  - first:
+      213: -8067578192231835920
+    second: Right_Wave_B_25
+  - first:
+      213: 139344598384258841
+    second: Right_Wave_B_26
+  - first:
+      213: -5659935303288287261
+    second: Right_Wave_B_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Right_Wave_B_0
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 342
+        width: 39
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f9b219ebb7aaef0800000000000000
+      internalID: -96128383625486488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_1
+      rect:
+        serializedVersion: 2
+        x: 2452
+        y: 325
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37933cccfbe3a6190800000000000000
+      internalID: -7968487597183649421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_2
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 325
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ee18c2debec3160800000000000000
+      internalID: 7006734524168138258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_3
+      rect:
+        serializedVersion: 2
+        x: 2461
+        y: 325
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438e99a6ff9a5b550800000000000000
+      internalID: 6176029378478729268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_4
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 306
+        width: 45
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba1d893f3eb8f720800000000000000
+      internalID: 2880261140461198008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_5
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 284
+        width: 59
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee3c4b9454d963d0800000000000000
+      internalID: -3212803399304331543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_6
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 271
+        width: 40
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf67a128abdbeb050800000000000000
+      internalID: 5818296377353598716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_7
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 273
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b823c128848bfaf10800000000000000
+      internalID: 2283246157660172939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_8
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 260
+        width: 65
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02acdb9e385ba12d0800000000000000
+      internalID: -3307131398183335392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_9
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 247
+        width: 61
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc54799b06ef1890800000000000000
+      internalID: -7485011118172906243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_10
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 234
+        width: 75
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05532c6fecef72c0800000000000000
+      internalID: -4431562995253684977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_11
+      rect:
+        serializedVersion: 2
+        x: 2438
+        y: 228
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e719b3be5104f96b0800000000000000
+      internalID: -5287436974624632450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_12
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 223
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7ae96dfcc5983a0800000000000000
+      internalID: -6662692125989230626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_13
+      rect:
+        serializedVersion: 2
+        x: 2437
+        y: 192
+        width: 85
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b080f5912cb45ef0800000000000000
+      internalID: -120264437596651339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_14
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 182
+        width: 80
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504296fc6e3b0c080800000000000000
+      internalID: -9169131037422705659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_15
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 153
+        width: 52
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a57f364519463090800000000000000
+      internalID: -8055170527783848539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_16
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 162
+        width: 41
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dabe98c87a9ebfb20800000000000000
+      internalID: 3169383668611935149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_17
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 135
+        width: 80
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fb425bbd5429e30800000000000000
+      internalID: 4508742986890526598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_18
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 112
+        width: 99
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f88978c89fda9ad0800000000000000
+      internalID: -2694595579736389383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_19
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 102
+        width: 68
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0215416f527e6c40800000000000000
+      internalID: 5507465148300071436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_20
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 79
+        width: 38
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64ced02ba6ca95d0800000000000000
+      internalID: -3054910958924282769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_21
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 89
+        width: 84
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec018f202b36c4490800000000000000
+      internalID: -7760718441661067058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_22
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 63
+        width: 85
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff880cb46d9e43de0800000000000000
+      internalID: -1354200481328494337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_23
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 42
+        width: 69
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83fbc5935990a970800000000000000
+      internalID: 8764173459137491854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_24
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 50
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0937787e9456e60800000000000000
+      internalID: 7954845575578620066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_25
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 24
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f65556c0643a0090800000000000000
+      internalID: -8067578192231835920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_26
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 28
+        width: 42
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f20188c2d0fe100800000000000000
+      internalID: 139344598384258841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_Wave_B_27
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 12
+        width: 57
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef0fcb44ded371b0800000000000000
+      internalID: -5659935303288287261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Right_Wave_B_0: -96128383625486488
+      Right_Wave_B_1: -7968487597183649421
+      Right_Wave_B_10: -4431562995253684977
+      Right_Wave_B_11: -5287436974624632450
+      Right_Wave_B_12: -6662692125989230626
+      Right_Wave_B_13: -120264437596651339
+      Right_Wave_B_14: -9169131037422705659
+      Right_Wave_B_15: -8055170527783848539
+      Right_Wave_B_16: 3169383668611935149
+      Right_Wave_B_17: 4508742986890526598
+      Right_Wave_B_18: -2694595579736389383
+      Right_Wave_B_19: 5507465148300071436
+      Right_Wave_B_2: 7006734524168138258
+      Right_Wave_B_20: -3054910958924282769
+      Right_Wave_B_21: -7760718441661067058
+      Right_Wave_B_22: -1354200481328494337
+      Right_Wave_B_23: 8764173459137491854
+      Right_Wave_B_24: 7954845575578620066
+      Right_Wave_B_25: -8067578192231835920
+      Right_Wave_B_26: 139344598384258841
+      Right_Wave_B_27: -5659935303288287261
+      Right_Wave_B_3: 6176029378478729268
+      Right_Wave_B_4: 2880261140461198008
+      Right_Wave_B_5: -3212803399304331543
+      Right_Wave_B_6: 5818296377353598716
+      Right_Wave_B_7: 2283246157660172939
+      Right_Wave_B_8: -3307131398183335392
+      Right_Wave_B_9: -7485011118172906243
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

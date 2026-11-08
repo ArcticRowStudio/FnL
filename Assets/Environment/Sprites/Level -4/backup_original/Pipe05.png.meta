@@ -1,0 +1,1092 @@
+fileFormatVersion: 2
+guid: 01639174419daca4a83355410ddf4d3b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2710735207726613900
+    second: Pipe05_0
+  - first:
+      213: 4403402114305678560
+    second: Pipe05_1
+  - first:
+      213: 5361662803700662810
+    second: Pipe05_2
+  - first:
+      213: 4142704906452422160
+    second: Pipe05_3
+  - first:
+      213: -2568968918801009617
+    second: Pipe05_4
+  - first:
+      213: -5085932604234602359
+    second: Pipe05_5
+  - first:
+      213: 576808905842549080
+    second: Pipe05_6
+  - first:
+      213: -830948167554659252
+    second: Pipe05_7
+  - first:
+      213: -7167931951408803844
+    second: Pipe05_8
+  - first:
+      213: 3224083076064278072
+    second: Pipe05_9
+  - first:
+      213: -8812351340504728359
+    second: Pipe05_10
+  - first:
+      213: 5583030285719274321
+    second: Pipe05_11
+  - first:
+      213: 808494252658943531
+    second: Pipe05_12
+  - first:
+      213: -2296004460477551044
+    second: Pipe05_13
+  - first:
+      213: -2394893612436753898
+    second: Pipe05_14
+  - first:
+      213: 6379654339201496526
+    second: Pipe05_15
+  - first:
+      213: 949029663311269054
+    second: Pipe05_16
+  - first:
+      213: 7364879283557195878
+    second: Pipe05_17
+  - first:
+      213: -3983256160803723099
+    second: Pipe05_18
+  - first:
+      213: 2270032946608465022
+    second: Pipe05_19
+  - first:
+      213: -360186721550768533
+    second: Pipe05_20
+  - first:
+      213: -260036497030229647
+    second: Pipe05_21
+  - first:
+      213: -647660086112512937
+    second: Pipe05_22
+  - first:
+      213: -5411506406684224753
+    second: Pipe05_23
+  - first:
+      213: 1511622659768503675
+    second: Pipe05_24
+  - first:
+      213: -2635861099157526008
+    second: Pipe05_25
+  - first:
+      213: 3466633283986058188
+    second: Pipe05_26
+  - first:
+      213: 6211302201541638538
+    second: Pipe05_27
+  - first:
+      213: -8850160670917772960
+    second: Pipe05_28
+  - first:
+      213: -5578208421347400201
+    second: Pipe05_29
+  - first:
+      213: 78373124642438739
+    second: Pipe05_30
+  - first:
+      213: 2434966706856286416
+    second: Pipe05_31
+  - first:
+      213: -5882015228250776177
+    second: Pipe05_32
+  - first:
+      213: 3464744992788521383
+    second: Pipe05_33
+  - first:
+      213: -659266338183831602
+    second: Pipe05_34
+  - first:
+      213: -7248648902411004568
+    second: Pipe05_35
+  - first:
+      213: 1728554015524049837
+    second: Pipe05_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pipe05_0
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1400
+        width: 354
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a7f4fc0b8816ad0800000000000000
+      internalID: -2710735207726613900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_1
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 599
+        width: 2278
+        height: 1778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ecd46a84e60c1d30800000000000000
+      internalID: 4403402114305678560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 675
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12c004a9e3786a40800000000000000
+      internalID: 5361662803700662810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_3
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 775
+        width: 228
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01e4d56d928dd7930800000000000000
+      internalID: 4142704906452422160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_4
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 875
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24b8db1160395cd0800000000000000
+      internalID: -2568968918801009617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_5
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 524
+        width: 679
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988e40d2e332b69b0800000000000000
+      internalID: -5085932604234602359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_6
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 499
+        width: 529
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851e600d4ac310800800000000000000
+      internalID: 576808905842549080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_7
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 299
+        width: 801
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c842e4b01e774f0800000000000000
+      internalID: -830948167554659252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 499
+        width: 227
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff0b161ed3668c90800000000000000
+      internalID: -7167931951408803844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_9
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 400
+        width: 278
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836f82bc97e3ebc20800000000000000
+      internalID: 3224083076064278072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_10
+      rect:
+        serializedVersion: 2
+        x: 2452
+        y: 714
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc3749452d34b580800000000000000
+      internalID: -8812351340504728359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_11
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 675
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1538b86f678ea7d40800000000000000
+      internalID: 5583030285719274321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_12
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 700
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b266eac3d39583b00800000000000000
+      internalID: 808494252658943531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_13
+      rect:
+        serializedVersion: 2
+        x: 3303
+        y: 700
+        width: 102
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ee582ab14f220e0800000000000000
+      internalID: -2296004460477551044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_14
+      rect:
+        serializedVersion: 2
+        x: 3551
+        y: 474
+        width: 254
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612fadbb2f0a3ced0800000000000000
+      internalID: -2394893612436753898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_15
+      rect:
+        serializedVersion: 2
+        x: 2353
+        y: 687
+        width: 74
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec572e512d5198850800000000000000
+      internalID: 6379654339201496526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_16
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 499
+        width: 179
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc0afa5371ab2d00800000000000000
+      internalID: 949029663311269054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_17
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 681
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6606f0600be453660800000000000000
+      internalID: 7364879283557195878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_18
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 499
+        width: 65
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a868ed30a1a8b8c0800000000000000
+      internalID: -3983256160803723099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_19
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 499
+        width: 477
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74e70310f6c08f10800000000000000
+      internalID: 2270032946608465022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_20
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 499
+        width: 52
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b666729c51c500bf0800000000000000
+      internalID: -360186721550768533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_21
+      rect:
+        serializedVersion: 2
+        x: 2426
+        y: 499
+        width: 76
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17150e50f2a246cf0800000000000000
+      internalID: -260036497030229647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_22
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 499
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7549018459c0307f0800000000000000
+      internalID: -647660086112512937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_23
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 537
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0316d1389776e4b0800000000000000
+      internalID: -5411506406684224753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_24
+      rect:
+        serializedVersion: 2
+        x: 3501
+        y: 518
+        width: 28
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7dcee5dccc5af410800000000000000
+      internalID: 1511622659768503675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_25
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 324
+        width: 427
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ae173bb4a8b6bd0800000000000000
+      internalID: -2635861099157526008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_26
+      rect:
+        serializedVersion: 2
+        x: 3215
+        y: 474
+        width: 188
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbe882da94fb1030800000000000000
+      internalID: 3466633283986058188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_27
+      rect:
+        serializedVersion: 2
+        x: 3401
+        y: 483
+        width: 128
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89bd73817af23650800000000000000
+      internalID: 6211302201541638538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_28
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 0
+        width: 2072
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06930dc82c9ed2580800000000000000
+      internalID: -8850160670917772960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_29
+      rect:
+        serializedVersion: 2
+        x: 3314
+        y: 446
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5ee72def83692b0800000000000000
+      internalID: -5578208421347400201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_30
+      rect:
+        serializedVersion: 2
+        x: 3524
+        y: 374
+        width: 6
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35eff3e01ff661100800000000000000
+      internalID: 78373124642438739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_31
+      rect:
+        serializedVersion: 2
+        x: 3551
+        y: 425
+        width: 102
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d85212a15dbac120800000000000000
+      internalID: 2434966706856286416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_32
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 0
+        width: 1054
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d9cac6052ee5ea0800000000000000
+      internalID: -5882015228250776177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_33
+      rect:
+        serializedVersion: 2
+        x: 3551
+        y: 374
+        width: 128
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a12974c63f351030800000000000000
+      internalID: 3464744992788521383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_34
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 200
+        width: 52
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf1e2422c0d9d6f0800000000000000
+      internalID: -659266338183831602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_35
+      rect:
+        serializedVersion: 2
+        x: 2963
+        y: 0
+        width: 716
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865544e6a30a76b90800000000000000
+      internalID: -7248648902411004568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe05_36
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 0
+        width: 26
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3d26608be0df710800000000000000
+      internalID: 1728554015524049837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pipe05_0: -2710735207726613900
+      Pipe05_1: 4403402114305678560
+      Pipe05_10: -8812351340504728359
+      Pipe05_11: 5583030285719274321
+      Pipe05_12: 808494252658943531
+      Pipe05_13: -2296004460477551044
+      Pipe05_14: -2394893612436753898
+      Pipe05_15: 6379654339201496526
+      Pipe05_16: 949029663311269054
+      Pipe05_17: 7364879283557195878
+      Pipe05_18: -3983256160803723099
+      Pipe05_19: 2270032946608465022
+      Pipe05_2: 5361662803700662810
+      Pipe05_20: -360186721550768533
+      Pipe05_21: -260036497030229647
+      Pipe05_22: -647660086112512937
+      Pipe05_23: -5411506406684224753
+      Pipe05_24: 1511622659768503675
+      Pipe05_25: -2635861099157526008
+      Pipe05_26: 3466633283986058188
+      Pipe05_27: 6211302201541638538
+      Pipe05_28: -8850160670917772960
+      Pipe05_29: -5578208421347400201
+      Pipe05_3: 4142704906452422160
+      Pipe05_30: 78373124642438739
+      Pipe05_31: 2434966706856286416
+      Pipe05_32: -5882015228250776177
+      Pipe05_33: 3464744992788521383
+      Pipe05_34: -659266338183831602
+      Pipe05_35: -7248648902411004568
+      Pipe05_36: 1728554015524049837
+      Pipe05_4: -2568968918801009617
+      Pipe05_5: -5085932604234602359
+      Pipe05_6: 576808905842549080
+      Pipe05_7: -830948167554659252
+      Pipe05_8: -7167931951408803844
+      Pipe05_9: 3224083076064278072
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

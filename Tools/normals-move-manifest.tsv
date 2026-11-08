@@ -1,0 +1,109 @@
+Assets/Environment/Sprites/Architecture/Antenna_Mast_Weather_128x384_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Antenna_Mast_Weather_128x384_NormalMap.png
+Assets/Environment/Sprites/Architecture/Arch_Bulkhead_Pillar_128x384_Normal.png	Assets/Environment/Sprites/Architecture/Normals/Arch_Bulkhead_Pillar_128x384_Normal.png
+Assets/Environment/Sprites/Architecture/Catwalk_Horizontal_Railing_256x96_Normal.png	Assets/Environment/Sprites/Architecture/Normals/Catwalk_Horizontal_Railing_256x96_Normal.png
+Assets/Environment/Sprites/Architecture/Crane_Overhead_Hoist_128x256_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Crane_Overhead_Hoist_128x256_NormalMap.png
+Assets/Environment/Sprites/Architecture/Deco_Ceiling_CableBundle_Droop_256x96_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Deco_Ceiling_CableBundle_Droop_256x96_NormalMap.png
+Assets/Environment/Sprites/Architecture/Deco_Ceiling_CableBundle_Droop_Waterproof_256x160_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Deco_Ceiling_CableBundle_Droop_Waterproof_256x160_NormalMap.png
+Assets/Environment/Sprites/Architecture/Deco_Ceiling_CableBundle_Hanging_128x128_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Deco_Ceiling_CableBundle_Hanging_128x128_NormalMap.png
+Assets/Environment/Sprites/Architecture/Deco_Ceiling_CableBundle_Hanging_Waterproof_128x256_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Deco_Ceiling_CableBundle_Hanging_Waterproof_128x256_NormalMap.png
+Assets/Environment/Sprites/Architecture/Hydroponics_Grow_Pod_256x256_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Hydroponics_Grow_Pod_256x256_NormalMap.png
+Assets/Environment/Sprites/Architecture/Lamp_Bunker_Cage_Bulkhead_128x128_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Lamp_Bunker_Cage_Bulkhead_128x128_NormalMap.png
+Assets/Environment/Sprites/Architecture/Lamp_Fluorescent_Tube_Dual_256x64_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Lamp_Fluorescent_Tube_Dual_256x64_NormalMap.png
+Assets/Environment/Sprites/Architecture/Lamp_Hanging_Wire_DropBulb_128x256_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Lamp_Hanging_Wire_DropBulb_128x256_NormalMap.png
+Assets/Environment/Sprites/Architecture/Lamp_Hanging_Wire_Industrial_128x256_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Lamp_Hanging_Wire_Industrial_128x256_NormalMap.png
+Assets/Environment/Sprites/Architecture/Lamp_Industrial_Swivel_Floodlight_128x128_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Lamp_Industrial_Swivel_Floodlight_128x128_NormalMap.png
+Assets/Environment/Sprites/Architecture/Lamp_Suspended_Dual_Wire_Fluorescent_256x192_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Lamp_Suspended_Dual_Wire_Fluorescent_256x192_NormalMap.png
+Assets/Environment/Sprites/Architecture/Lamp_Suspended_Waterproof_Fluorescent_256x384_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Lamp_Suspended_Waterproof_Fluorescent_256x384_NormalMap.png
+Assets/Environment/Sprites/Architecture/Snow_Drift_Platform_Cap_256x64_NormalMap.png	Assets/Environment/Sprites/Architecture/Normals/Snow_Drift_Platform_Cap_256x64_NormalMap.png
+Assets/Environment/Sprites/Architecture/Window_Glacier_Observation_384x192_Normal.png	Assets/Environment/Sprites/Architecture/Normals/Window_Glacier_Observation_384x192_Normal.png
+Assets/Environment/Sprites/Background_MetalWall_Normal.png	Assets/Environment/Sprites/Normals/Background_MetalWall_Normal.png
+Assets/Environment/Sprites/Background_MetalWall_Pixel_Normal.png	Assets/Environment/Sprites/Normals/Background_MetalWall_Pixel_Normal.png
+Assets/Environment/Sprites/Background_TankerBulkhead_32PPU_Normal.png	Assets/Environment/Sprites/Normals/Background_TankerBulkhead_32PPU_Normal.png
+Assets/Environment/Sprites/Background_TankerBulkhead_LargeBay_Normal.png	Assets/Environment/Sprites/Normals/Background_TankerBulkhead_LargeBay_Normal.png
+Assets/Environment/Sprites/Background_TankerBulkhead_Normal.png	Assets/Environment/Sprites/Normals/Background_TankerBulkhead_Normal.png
+Assets/Environment/Sprites/Decals/Decal_Pipe_Gauge_Normal.png	Assets/Environment/Sprites/Decals/Normals/Decal_Pipe_Gauge_Normal.png
+Assets/Environment/Sprites/Decals/Decal_Sign_HighVoltage_Normal.png	Assets/Environment/Sprites/Decals/Normals/Decal_Sign_HighVoltage_Normal.png
+Assets/Environment/Sprites/Decals/Decal_Sign_Sector04_Normal.png	Assets/Environment/Sprites/Decals/Normals/Decal_Sign_Sector04_Normal.png
+Assets/Environment/Sprites/Decals/Hazard_Stripes_YellowBlack_Normal.png	Assets/Environment/Sprites/Decals/Normals/Hazard_Stripes_YellowBlack_Normal.png
+Assets/Environment/Sprites/Fan/Fan_Back_Normal.png	Assets/Environment/Sprites/Fan/Normals/Fan_Back_Normal.png
+Assets/Environment/Sprites/Fan/Fan_Blades_Normal.png	Assets/Environment/Sprites/Fan/Normals/Fan_Blades_Normal.png
+Assets/Environment/Sprites/Fan/Fan_Front_Normal.png	Assets/Environment/Sprites/Fan/Normals/Fan_Front_Normal.png
+Assets/Environment/Sprites/Furniture/Barrels_Fuel_Oil_256x160_NormalMap.png	Assets/Environment/Sprites/Furniture/Normals/Barrels_Fuel_Oil_256x160_NormalMap.png
+Assets/Environment/Sprites/Furniture/Barricade_Scrap_Sandbags_320x192_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Barricade_Scrap_Sandbags_320x192_Normal.png
+Assets/Environment/Sprites/Furniture/Bed_Medical_Infirmary_IV_320x256_NormalMap.png	Assets/Environment/Sprites/Furniture/Normals/Bed_Medical_Infirmary_IV_320x256_NormalMap.png
+Assets/Environment/Sprites/Furniture/BunkBed_Military_Barracks_416x384_Normal.png	Assets/Environment/Sprites/Furniture/Normals/BunkBed_Military_Barracks_416x384_Normal.png
+Assets/Environment/Sprites/Furniture/Burner_Drum_PostApoc_192x256_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Burner_Drum_PostApoc_192x256_Normal.png
+Assets/Environment/Sprites/Furniture/Cabinet_RF_Transceiver_320x512_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Cabinet_RF_Transceiver_320x512_Normal.png
+Assets/Environment/Sprites/Furniture/Console_Radar_PPI_640x448_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Console_Radar_PPI_640x448_Normal.png
+Assets/Environment/Sprites/Furniture/Crates_Scavenger_Stash_288x176_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Crates_Scavenger_Stash_288x176_Normal.png
+Assets/Environment/Sprites/Furniture/Dispenser_Ration_Coffee_224x352_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Dispenser_Ration_Coffee_224x352_Normal.png
+Assets/Environment/Sprites/Furniture/Display_Tactical_Status_512x288_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Display_Tactical_Status_512x288_Normal.png
+Assets/Environment/Sprites/Furniture/Generator_Diesel_Heavy_384x256_NormalMap.png	Assets/Environment/Sprites/Furniture/Normals/Generator_Diesel_Heavy_384x256_NormalMap.png
+Assets/Environment/Sprites/Furniture/GunRack_Armoury_Wall_320x256_NormalMap.png	Assets/Environment/Sprites/Furniture/Normals/GunRack_Armoury_Wall_320x256_NormalMap.png
+Assets/Environment/Sprites/Furniture/Junction_Box_Sparking_192x224_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Junction_Box_Sparking_192x224_Normal.png
+Assets/Environment/Sprites/Furniture/Lockers_Crew_Storage_288x384_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Lockers_Crew_Storage_288x384_Normal.png
+Assets/Environment/Sprites/Furniture/Rack_Server_Comms_320x576_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Rack_Server_Comms_320x576_Normal.png
+Assets/Environment/Sprites/Furniture/Station_Hazmat_Emergency_256x288_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Station_Hazmat_Emergency_256x288_Normal.png
+Assets/Environment/Sprites/Furniture/Station_Lab_Analysis_320x192_NormalMap.png	Assets/Environment/Sprites/Furniture/Normals/Station_Lab_Analysis_320x192_NormalMap.png
+Assets/Environment/Sprites/Furniture/Table_Tactical_Briefing_384x192_NormalMap.png	Assets/Environment/Sprites/Furniture/Normals/Table_Tactical_Briefing_384x192_NormalMap.png
+Assets/Environment/Sprites/Furniture/Telescope_Observation_Tripod_128x192_NormalMap.png	Assets/Environment/Sprites/Furniture/Normals/Telescope_Observation_Tripod_128x192_NormalMap.png
+Assets/Environment/Sprites/Furniture/UPS_Battery_Bank_448x288_Normal.png	Assets/Environment/Sprites/Furniture/Normals/UPS_Battery_Bank_448x288_Normal.png
+Assets/Environment/Sprites/Furniture/Workbench_Engineering_Tech_448x320_Normal.png	Assets/Environment/Sprites/Furniture/Normals/Workbench_Engineering_Tech_448x320_Normal.png
+Assets/Environment/Sprites/Level 0/backdrop_1_Normal.png	Assets/Environment/Sprites/Level 0/Normals/backdrop_1_Normal.png
+Assets/Environment/Sprites/Level 0/Level0__Bridge 복사_dot_679x42_Normal.png	Assets/Environment/Sprites/Level 0/Normals/Level0__Bridge 복사_dot_679x42_Normal.png
+Assets/Environment/Sprites/Level 0/Level0__Bridge_dot_679x42_Normal.png	Assets/Environment/Sprites/Level 0/Normals/Level0__Bridge_dot_679x42_Normal.png
+Assets/Environment/Sprites/Level 0/Level1__Laser Beam Projector 복사 2_dot_693x316_Normal.png	Assets/Environment/Sprites/Level 0/Normals/Level1__Laser Beam Projector 복사 2_dot_693x316_Normal.png
+Assets/Environment/Sprites/Level 0/Level1__Laser Beam Projector 복사_dot_693x316_Normal.png	Assets/Environment/Sprites/Level 0/Normals/Level1__Laser Beam Projector 복사_dot_693x316_Normal.png
+Assets/Environment/Sprites/Level 0/Level1__X 기둥_dot_45x793_Normal.png	Assets/Environment/Sprites/Level 0/Normals/Level1__X 기둥_dot_45x793_Normal.png
+Assets/Environment/Sprites/Level 0/Level-1__관리 컴퓨터01 복사_dot_302x81_Normal.png	Assets/Environment/Sprites/Level 0/Normals/Level-1__관리 컴퓨터01 복사_dot_302x81_Normal.png
+Assets/Environment/Sprites/Level 0/Level-1__관리 컴퓨터01_dot_302x81_Normal.png	Assets/Environment/Sprites/Level 0/Normals/Level-1__관리 컴퓨터01_dot_302x81_Normal.png
+Assets/Environment/Sprites/Level -2/조종실 장비__05_삽입한 이미지_dot_275x170_Normal.png	Assets/Environment/Sprites/Level -2/Normals/조종실 장비__05_삽입한 이미지_dot_275x170_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Pipe01_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Pipe01_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Pipe02_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Pipe02_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Pipe03_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Pipe03_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Pipe04_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Pipe04_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Pipe05_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Pipe05_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Pipe06_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Pipe06_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Pipe07_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Pipe07_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Pipe08_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Pipe08_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Pipe09_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Pipe09_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Turbine01_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Turbine01_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Turbine02_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Turbine02_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Turbine03_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Turbine03_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Turbine04_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Turbine04_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Turbine05_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Turbine05_Normal.png
+Assets/Environment/Sprites/Level -4/backup_original/Turbine06_Normal.png	Assets/Environment/Sprites/Level -4/backup_original/Normals/Turbine06_Normal.png
+Assets/Environment/Sprites/Level -4/Chair and Table_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Chair and Table_Normal.png
+Assets/Environment/Sprites/Level -4/Fan_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Fan_Normal.png
+Assets/Environment/Sprites/Level -4/Fence_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Fence_Normal.png
+Assets/Environment/Sprites/Level -4/Frame_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Frame_Normal.png
+Assets/Environment/Sprites/Level -4/Ladder_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Ladder_Normal.png
+Assets/Environment/Sprites/Level -4/Lamp_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Lamp_Normal.png
+Assets/Environment/Sprites/Level -4/Pipe01_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Pipe01_Normal.png
+Assets/Environment/Sprites/Level -4/Pipe02_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Pipe02_Normal.png
+Assets/Environment/Sprites/Level -4/Pipe03_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Pipe03_Normal.png
+Assets/Environment/Sprites/Level -4/Pipe04_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Pipe04_Normal.png
+Assets/Environment/Sprites/Level -4/Pipe05_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Pipe05_Normal.png
+Assets/Environment/Sprites/Level -4/Pipe06_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Pipe06_Normal.png
+Assets/Environment/Sprites/Level -4/Pipe07_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Pipe07_Normal.png
+Assets/Environment/Sprites/Level -4/Pipe08_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Pipe08_Normal.png
+Assets/Environment/Sprites/Level -4/Pipe09_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Pipe09_Normal.png
+Assets/Environment/Sprites/Level -4/Turbine01_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Turbine01_Normal.png
+Assets/Environment/Sprites/Level -4/Turbine02_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Turbine02_Normal.png
+Assets/Environment/Sprites/Level -4/Turbine03_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Turbine03_Normal.png
+Assets/Environment/Sprites/Level -4/Turbine04_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Turbine04_Normal.png
+Assets/Environment/Sprites/Level -4/Turbine05_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Turbine05_Normal.png
+Assets/Environment/Sprites/Level -4/Turbine06_Normal.png	Assets/Environment/Sprites/Level -4/Normals/Turbine06_Normal.png
+Assets/Environment/Sprites/Radome/Container_Military_NavyGrey_Normal.png	Assets/Environment/Sprites/Radome/Normals/Container_Military_NavyGrey_Normal.png
+Assets/Environment/Sprites/Radome/Container_PowerGenerator_HVAC_Normal.png	Assets/Environment/Sprites/Radome/Normals/Container_PowerGenerator_HVAC_Normal.png
+Assets/Environment/Sprites/Radome/Deck_Auxiliary_Radome_Normal.png	Assets/Environment/Sprites/Radome/Normals/Deck_Auxiliary_Radome_Normal.png
+Assets/Environment/Sprites/Radome/Deck_Crane_Articulated_Normal.png	Assets/Environment/Sprites/Radome/Normals/Deck_Crane_Articulated_Normal.png
+Assets/Environment/Sprites/Radome/Deck_Safety_Railing_Normal.png	Assets/Environment/Sprites/Radome/Normals/Deck_Safety_Railing_Normal.png
+Assets/Environment/Sprites/Radome/Deck_Weather_Plating_Normal.png	Assets/Environment/Sprites/Radome/Normals/Deck_Weather_Plating_Normal.png
+Assets/Environment/Sprites/Radome/Radome_Catwalk_Platform_Normal.png	Assets/Environment/Sprites/Radome/Normals/Radome_Catwalk_Platform_Normal.png
+Assets/Environment/Sprites/Radome/Radome_Interior_Backdrop_Normal.png	Assets/Environment/Sprites/Radome/Normals/Radome_Interior_Backdrop_Normal.png
+Assets/Environment/Sprites/Radome/Radome_Shutter_Left_Normal.png	Assets/Environment/Sprites/Radome/Normals/Radome_Shutter_Left_Normal.png
+Assets/Environment/Sprites/Radome/Radome_Shutter_Right_Normal.png	Assets/Environment/Sprites/Radome/Normals/Radome_Shutter_Right_Normal.png
+Assets/Environment/Sprites/Radome/XBand_Radar_Octagonal_Face_Normal.png	Assets/Environment/Sprites/Radome/Normals/XBand_Radar_Octagonal_Face_Normal.png
+Assets/Environment/Sprites/Radome/XBand_Radar_Pedestal_Gantry_Normal.png	Assets/Environment/Sprites/Radome/Normals/XBand_Radar_Pedestal_Gantry_Normal.png
+Assets/Environment/Sprites/Radome/XBand_Radar_Turntable_Silo_Normal.png	Assets/Environment/Sprites/Radome/Normals/XBand_Radar_Turntable_Silo_Normal.png

@@ -1,0 +1,1404 @@
+fileFormatVersion: 2
+guid: db4ac51f325f97548818a6c0a4b5ccea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5166075696903190089
+    second: Realistic_Steam_Flipbook_0
+  - first:
+      213: 4802200332025020753
+    second: Realistic_Steam_Flipbook_1
+  - first:
+      213: -6562762845633999209
+    second: Realistic_Steam_Flipbook_2
+  - first:
+      213: 1039095987226588304
+    second: Realistic_Steam_Flipbook_3
+  - first:
+      213: -2353533921482539751
+    second: Realistic_Steam_Flipbook_4
+  - first:
+      213: -6705014806761134118
+    second: Realistic_Steam_Flipbook_5
+  - first:
+      213: 2188767889341395333
+    second: Realistic_Steam_Flipbook_6
+  - first:
+      213: 5802504418530460948
+    second: Realistic_Steam_Flipbook_7
+  - first:
+      213: 6187078796373511906
+    second: Realistic_Steam_Flipbook_8
+  - first:
+      213: 6846542625947492429
+    second: Realistic_Steam_Flipbook_9
+  - first:
+      213: 1574452148131708978
+    second: Realistic_Steam_Flipbook_10
+  - first:
+      213: 545170263047493798
+    second: Realistic_Steam_Flipbook_11
+  - first:
+      213: -9074117989847446199
+    second: Realistic_Steam_Flipbook_12
+  - first:
+      213: -5635287954522008689
+    second: Realistic_Steam_Flipbook_13
+  - first:
+      213: -1360409930518449507
+    second: Realistic_Steam_Flipbook_14
+  - first:
+      213: 3013659058175720814
+    second: Realistic_Steam_Flipbook_15
+  - first:
+      213: -5035088146234910302
+    second: Realistic_Steam_Flipbook_16
+  - first:
+      213: 768069021252104514
+    second: Realistic_Steam_Flipbook_17
+  - first:
+      213: -6193654636074817095
+    second: Realistic_Steam_Flipbook_18
+  - first:
+      213: -1437259543312140350
+    second: Realistic_Steam_Flipbook_19
+  - first:
+      213: 7045217156855787026
+    second: Realistic_Steam_Flipbook_20
+  - first:
+      213: -8744515165700808669
+    second: Realistic_Steam_Flipbook_21
+  - first:
+      213: 6403225404794510232
+    second: Realistic_Steam_Flipbook_22
+  - first:
+      213: 7503374176249087384
+    second: Realistic_Steam_Flipbook_23
+  - first:
+      213: -5268834449913915740
+    second: Realistic_Steam_Flipbook_24
+  - first:
+      213: -3221636184078132592
+    second: Realistic_Steam_Flipbook_25
+  - first:
+      213: -4823784217485804661
+    second: Realistic_Steam_Flipbook_26
+  - first:
+      213: 1201475240328397838
+    second: Realistic_Steam_Flipbook_27
+  - first:
+      213: 7546497185577366752
+    second: Realistic_Steam_Flipbook_28
+  - first:
+      213: 8457696796712214791
+    second: Realistic_Steam_Flipbook_29
+  - first:
+      213: -8069563210338098374
+    second: Realistic_Steam_Flipbook_30
+  - first:
+      213: 3815416391617603992
+    second: Realistic_Steam_Flipbook_31
+  - first:
+      213: -145942233889128094
+    second: Realistic_Steam_Flipbook_32
+  - first:
+      213: 8711872115541633016
+    second: Realistic_Steam_Flipbook_33
+  - first:
+      213: 8558064358659691244
+    second: Realistic_Steam_Flipbook_34
+  - first:
+      213: -8214342520022728796
+    second: Realistic_Steam_Flipbook_35
+  - first:
+      213: 4937158715134560746
+    second: Realistic_Steam_Flipbook_36
+  - first:
+      213: -5490091409562045163
+    second: Realistic_Steam_Flipbook_37
+  - first:
+      213: 7531547694115476606
+    second: Realistic_Steam_Flipbook_38
+  - first:
+      213: 8084504753753999690
+    second: Realistic_Steam_Flipbook_39
+  - first:
+      213: 632058941353642277
+    second: Realistic_Steam_Flipbook_40
+  - first:
+      213: -4313072769724144411
+    second: Realistic_Steam_Flipbook_41
+  - first:
+      213: -3551142389031658801
+    second: Realistic_Steam_Flipbook_42
+  - first:
+      213: 1833711751657527028
+    second: Realistic_Steam_Flipbook_43
+  - first:
+      213: 216455409149860109
+    second: Realistic_Steam_Flipbook_44
+  - first:
+      213: -2783603382264211514
+    second: Realistic_Steam_Flipbook_45
+  - first:
+      213: 6492303607088222149
+    second: Realistic_Steam_Flipbook_46
+  - first:
+      213: 8260930275262016394
+    second: Realistic_Steam_Flipbook_47
+  - first:
+      213: 7412566614159439971
+    second: Realistic_Steam_Flipbook_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 854
+        width: 81
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94671bca97691b740800000000000000
+      internalID: 5166075696903190089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_1
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 827
+        width: 139
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1514d9242c7d4a240800000000000000
+      internalID: 4802200332025020753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_2
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 804
+        width: 171
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e8ad086f16ce4a0800000000000000
+      internalID: -6562762845633999209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_3
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 794
+        width: 212
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094bc268b4c9b6e00800000000000000
+      internalID: 1039095987226588304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 539
+        width: 198
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d73333e51965fd0800000000000000
+      internalID: -2353533921482539751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 529
+        width: 239
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7a445de8003f2a0800000000000000
+      internalID: -6705014806761134118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_6
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 532
+        width: 228
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581b9fb7cc0106e10800000000000000
+      internalID: 2188767889341395333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_7
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 522
+        width: 230
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41584229603a68050800000000000000
+      internalID: 5802504418530460948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 265
+        width: 239
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eec13f726becd550800000000000000
+      internalID: 6187078796373511906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 265
+        width: 229
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d40ab276e3ec30f50800000000000000
+      internalID: 6846542625947492429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_10
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 268
+        width: 227
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230cd3d03e399d510800000000000000
+      internalID: 1574452148131708978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_11
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 489
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a85d0f3775d09700800000000000000
+      internalID: 545170263047493798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_12
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 315
+        width: 226
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d4925d3c1421280800000000000000
+      internalID: -9074117989847446199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_13
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 376
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f839daf567f6bc1b0800000000000000
+      internalID: -5635287954522008689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_14
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 360
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92b88e306ade1de0800000000000000
+      internalID: -1360409930518449507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 106
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6db3b442faa2d920800000000000000
+      internalID: 3013659058175720814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_16
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 43
+        width: 224
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a953ee0206cf1ab0800000000000000
+      internalID: -5035088146234910302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_17
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 236
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241b6b694bab8aa00800000000000000
+      internalID: 768069021252104514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_18
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 40
+        width: 164
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b92f438ce7bb0aa0800000000000000
+      internalID: -6193654636074817095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_19
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 195
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7f6de6f04dd0ce0800000000000000
+      internalID: -1437259543312140350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_20
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 189
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e60ef4da3a5c160800000000000000
+      internalID: 7045217156855787026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_21
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 221
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320236789cd35a680800000000000000
+      internalID: -8744515165700808669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_22
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 156
+        width: 103
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b98857493dcd850800000000000000
+      internalID: 6403225404794510232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_23
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 144
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8958a280f07512860800000000000000
+      internalID: 7503374176249087384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_24
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 168
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a65a88bbf651e6b0800000000000000
+      internalID: -5268834449913915740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_25
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 136
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a5a74a5f27a43d0800000000000000
+      internalID: -3221636184078132592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_26
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 154
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b7f9bcfc97e0db0800000000000000
+      internalID: -4823784217485804661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_27
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 128
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04833a8d5f7ca010800000000000000
+      internalID: 1201475240328397838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_28
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 178
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4f2dc053b8ab860800000000000000
+      internalID: 7546497185577366752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_29
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 114
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701adf10d66cf5570800000000000000
+      internalID: 8457696796712214791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_30
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 137
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33ac3bb307230090800000000000000
+      internalID: -8069563210338098374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_31
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 109
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899e1944ef413f430800000000000000
+      internalID: 3815416391617603992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_32
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 128
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261cf4fbf4289fdf0800000000000000
+      internalID: -145942233889128094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_33
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 118
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f76d771889c6e870800000000000000
+      internalID: 8711872115541633016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_34
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 138
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce297de013a54c670800000000000000
+      internalID: 8558064358659691244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_35
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 155
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af78aedffac00e80800000000000000
+      internalID: -8214342520022728796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_36
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 110
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9c15771bf448440800000000000000
+      internalID: 4937158715134560746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_37
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 188
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51571a463f64fc3b0800000000000000
+      internalID: -5490091409562045163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_38
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 90
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e745aa459be658860800000000000000
+      internalID: 7531547694115476606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_39
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 118
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49c6707d3ee13070800000000000000
+      internalID: 8084504753753999690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_40
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 140
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5294e74224685c800800000000000000
+      internalID: 632058941353642277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_41
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 173
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4ae26ea23e424c0800000000000000
+      internalID: -4313072769724144411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_42
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 189
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca9feadfcec7bec0800000000000000
+      internalID: -3551142389031658801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_43
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 89
+        width: 176
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6910a6f17a27910800000000000000
+      internalID: 1833711751657527028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_44
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 280
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09d61c3c01010300800000000000000
+      internalID: 216455409149860109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_45
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 283
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7d094d877ae59d0800000000000000
+      internalID: -2783603382264211514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_46
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 12
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf0b72abbb491a50800000000000000
+      internalID: 6492303607088222149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_47
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 19
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b234b2158b4a270800000000000000
+      internalID: 8260930275262016394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Realistic_Steam_Flipbook_48
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 24
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368b4e6ef0abed660800000000000000
+      internalID: 7412566614159439971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Realistic_Steam_Flipbook_0: 5166075696903190089
+      Realistic_Steam_Flipbook_1: 4802200332025020753
+      Realistic_Steam_Flipbook_10: 1574452148131708978
+      Realistic_Steam_Flipbook_11: 545170263047493798
+      Realistic_Steam_Flipbook_12: -9074117989847446199
+      Realistic_Steam_Flipbook_13: -5635287954522008689
+      Realistic_Steam_Flipbook_14: -1360409930518449507
+      Realistic_Steam_Flipbook_15: 3013659058175720814
+      Realistic_Steam_Flipbook_16: -5035088146234910302
+      Realistic_Steam_Flipbook_17: 768069021252104514
+      Realistic_Steam_Flipbook_18: -6193654636074817095
+      Realistic_Steam_Flipbook_19: -1437259543312140350
+      Realistic_Steam_Flipbook_2: -6562762845633999209
+      Realistic_Steam_Flipbook_20: 7045217156855787026
+      Realistic_Steam_Flipbook_21: -8744515165700808669
+      Realistic_Steam_Flipbook_22: 6403225404794510232
+      Realistic_Steam_Flipbook_23: 7503374176249087384
+      Realistic_Steam_Flipbook_24: -5268834449913915740
+      Realistic_Steam_Flipbook_25: -3221636184078132592
+      Realistic_Steam_Flipbook_26: -4823784217485804661
+      Realistic_Steam_Flipbook_27: 1201475240328397838
+      Realistic_Steam_Flipbook_28: 7546497185577366752
+      Realistic_Steam_Flipbook_29: 8457696796712214791
+      Realistic_Steam_Flipbook_3: 1039095987226588304
+      Realistic_Steam_Flipbook_30: -8069563210338098374
+      Realistic_Steam_Flipbook_31: 3815416391617603992
+      Realistic_Steam_Flipbook_32: -145942233889128094
+      Realistic_Steam_Flipbook_33: 8711872115541633016
+      Realistic_Steam_Flipbook_34: 8558064358659691244
+      Realistic_Steam_Flipbook_35: -8214342520022728796
+      Realistic_Steam_Flipbook_36: 4937158715134560746
+      Realistic_Steam_Flipbook_37: -5490091409562045163
+      Realistic_Steam_Flipbook_38: 7531547694115476606
+      Realistic_Steam_Flipbook_39: 8084504753753999690
+      Realistic_Steam_Flipbook_4: -2353533921482539751
+      Realistic_Steam_Flipbook_40: 632058941353642277
+      Realistic_Steam_Flipbook_41: -4313072769724144411
+      Realistic_Steam_Flipbook_42: -3551142389031658801
+      Realistic_Steam_Flipbook_43: 1833711751657527028
+      Realistic_Steam_Flipbook_44: 216455409149860109
+      Realistic_Steam_Flipbook_45: -2783603382264211514
+      Realistic_Steam_Flipbook_46: 6492303607088222149
+      Realistic_Steam_Flipbook_47: 8260930275262016394
+      Realistic_Steam_Flipbook_48: 7412566614159439971
+      Realistic_Steam_Flipbook_5: -6705014806761134118
+      Realistic_Steam_Flipbook_6: 2188767889341395333
+      Realistic_Steam_Flipbook_7: 5802504418530460948
+      Realistic_Steam_Flipbook_8: 6187078796373511906
+      Realistic_Steam_Flipbook_9: 6846542625947492429
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
