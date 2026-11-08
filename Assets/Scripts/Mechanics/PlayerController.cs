@@ -1271,6 +1271,8 @@ namespace Platformer.Mechanics
             skipPhysicsStep = false;
             suspendGravity = false;
             isWarpingDash = false;
+            // The up/down held to aim the warp must not latch onto a ladder or rope on arrival.
+            climbCooldownTimer = Mathf.Max(climbCooldownTimer, 0.2f);
 
             if (direction.y > 0.1f)
             {
@@ -1906,9 +1908,30 @@ namespace Platformer.Mechanics
             }
         }
 
+        // Same footprint as the probe in UpdateNearbyClimbables.
+        private static readonly Vector2 ClimbProbeSize = new Vector2(1.2f, 1.8f);
+
+        private bool IsTouchingZone(Component zone)
+        {
+            var c = zone != null ? zone.GetComponent<Collider2D>() : null;
+            if (c == null) return false;
+            Bounds b = c.bounds;
+            Vector2 p = body.position;
+            Vector2 half = ClimbProbeSize * 0.5f + new Vector2(0.1f, 0.1f);
+            return p.x >= b.min.x - half.x && p.x <= b.max.x + half.x
+                && p.y >= b.min.y - half.y && p.y <= b.max.y + half.y;
+        }
+
         private void UpdateNearbyClimbables()
         {
-            var hits = Physics2D.OverlapBoxAll(body.position, new Vector2(1.2f, 1.8f), 0f);
+            // These references are set by trigger callbacks and the probe below but only cleared in
+            // OnTriggerExit2D. A warp moves the body without a physics step, so it can carry the
+            // player out of a zone with no exit callback; the stale ladder then caught the up input
+            // that aimed the warp and dragged the player back onto it. Drop any zone not touched now.
+            if (nearbyLadder != null && !IsTouchingZone(nearbyLadder)) nearbyLadder = null;
+            if (nearbyRope != null && !IsTouchingZone(nearbyRope)) nearbyRope = null;
+
+            var hits = Physics2D.OverlapBoxAll(body.position, ClimbProbeSize, 0f);
             for (int i = 0; i < hits.Length; i++)
             {
                 if (hits[i].isTrigger)
@@ -1961,10 +1984,12 @@ namespace Platformer.Mechanics
 
         void OnTriggerExit2D(Collider2D other)
         {
+            // The dismount checks key off the zone being climbed, not nearbyLadder/nearbyRope, which
+            // UpdateNearbyClimbables may already have cleared this frame.
             var ladder = other.GetComponentInParent<LadderZone>();
-            if (ladder != null && nearbyLadder == ladder)
+            if (ladder != null)
             {
-                nearbyLadder = null;
+                if (nearbyLadder == ladder) nearbyLadder = null;
                 // Only dismount if we moved far horizontally away from the ladder
                 if (currentLadder == ladder && Mathf.Abs(body.position.x - ladder.CenterX) > 0.8f)
                 {
@@ -1973,9 +1998,9 @@ namespace Platformer.Mechanics
             }
 
             var rope = other.GetComponentInParent<RopeZone>();
-            if (rope != null && nearbyRope == rope)
+            if (rope != null)
             {
-                nearbyRope = null;
+                if (nearbyRope == rope) nearbyRope = null;
                 // Only dismount if we moved far horizontally away from the rope
                 if (currentRope == rope && Mathf.Abs(body.position.x - rope.CenterX) > 0.8f)
                 {
