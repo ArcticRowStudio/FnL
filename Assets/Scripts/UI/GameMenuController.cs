@@ -37,7 +37,7 @@ namespace Platformer.UI
         static GameMenuController current;
         bool open;
 
-        enum Page { None, Title, Pause, Controls, DemoEnd }
+        enum Page { None, Title, Pause, Controls, DemoEnd, BossSelect }
 
         static readonly string[,] ControlRows =
         {
@@ -56,9 +56,10 @@ namespace Platformer.UI
 
         Page page = Page.None;
         Page controlsReturnTo = Page.Pause;
-        GameObject canvasRoot, overlay, titlePage, pausePage, controlsPage, demoEndPage;
+        GameObject canvasRoot, overlay, titlePage, pausePage, controlsPage, demoEndPage, bossSelectPage;
         Image overlayImage;
-        Button titleFirst, pauseFirst, controlsFirst, demoEndFirst;
+        Button titleFirst, pauseFirst, controlsFirst, demoEndFirst, bossSelectFirst;
+        Platformer.Mechanics.DemoBossSelect bossSelect;
         InputAction menuAction;
         bool savedControl = true;
         bool closePending;
@@ -71,6 +72,8 @@ namespace Platformer.UI
             closePending = false;
             demoEndRoutine = null;
             if (canvasRoot != null) Destroy(canvasRoot);   // left over from an earlier session
+            bossSelect = FindAnyObjectByType<Platformer.Mechanics.DemoBossSelect>();
+            if (bossSelect != null && !bossSelect.showInTitle) bossSelect = null;
             BuildUI();
             menuAction = InputSystem.actions != null ? InputSystem.actions.FindAction("Player/Menu") : null;
             // The player enables only the actions it reads itself, so Menu starts out disabled.
@@ -104,6 +107,7 @@ namespace Platformer.UI
                     case Page.None: Open(Page.Pause); break;
                     case Page.Pause: Resume(); break;
                     case Page.Controls: Back(); break;
+                    case Page.BossSelect: ShowPage(Page.Title); break;
                 }
             }
         }
@@ -216,10 +220,12 @@ namespace Platformer.UI
             pausePage.SetActive(target == Page.Pause);
             controlsPage.SetActive(target == Page.Controls);
             demoEndPage.SetActive(target == Page.DemoEnd);
+            bossSelectPage.SetActive(target == Page.BossSelect);
             overlayImage.color = new Color(0f, 0f, 0f, target == Page.Title ? 0.6f : target == Page.DemoEnd ? 0.85f : 0.72f);
 
             Button first = target == Page.Title ? titleFirst : target == Page.Pause ? pauseFirst
-                : target == Page.Controls ? controlsFirst : target == Page.DemoEnd ? demoEndFirst : null;
+                : target == Page.Controls ? controlsFirst : target == Page.DemoEnd ? demoEndFirst
+                : target == Page.BossSelect ? bossSelectFirst : null;
             if (EventSystem.current != null)
                 EventSystem.current.SetSelectedGameObject(first != null ? first.gameObject : null);
         }
@@ -249,6 +255,7 @@ namespace Platformer.UI
             BuildPause();
             BuildControls();
             BuildDemoEnd();
+            BuildBossSelect();
         }
 
         void BuildDemoEnd()
@@ -293,8 +300,35 @@ namespace Platformer.UI
 
             var list = ButtonColumn(titlePage.transform, new Vector2(0f, -110f));
             titleFirst = MenuButton(list, "START", StartGame);
+            if (bossSelect != null) MenuButton(list, "BOSS SELECT", () => ShowPage(Page.BossSelect));
             MenuButton(list, "CONTROLS", ShowControls);
             MenuButton(list, "QUIT", QuitGame);
+        }
+
+        void BuildBossSelect()
+        {
+            bossSelectPage = NewRect("BossSelect", overlay.transform);
+            Stretch(bossSelectPage);
+            var header = Label(bossSelectPage.transform, "BOSS SELECT", 64, FontStyles.Bold, Color.white);
+            Place(header, new Vector2(0.5f, 0.5f), new Vector2(0f, 230f), new Vector2(900f, 90f));
+            header.characterSpacing = 10f;
+            var bar = NewRect("AccentBar", bossSelectPage.transform);
+            bar.AddComponent<Image>().color = accent;
+            Place(bar, new Vector2(0.5f, 0.5f), new Vector2(0f, 175f), new Vector2(140f, 5f));
+
+            var list = ButtonColumn(bossSelectPage.transform, new Vector2(0f, -60f));
+            Button first = null;
+            if (bossSelect != null && bossSelect.HasQuadpod) first = first ?? MenuButton(list, "QUADPOD", () => JumpTo(bossSelect.JumpToQuadpod));
+            if (bossSelect != null && bossSelect.HasLour) { var b = MenuButton(list, "LOUR", () => JumpTo(bossSelect.JumpToLour)); first = first ?? b; }
+            if (bossSelect != null && bossSelect.HasVtol) { var b = MenuButton(list, "VTOL", () => JumpTo(bossSelect.JumpToVtol)); first = first ?? b; }
+            var back = MenuButton(list, "BACK", () => ShowPage(Page.Title));
+            bossSelectFirst = first ?? back;
+        }
+
+        void JumpTo(System.Action jump)
+        {
+            jump();
+            Close();
         }
 
         void BuildPause()
