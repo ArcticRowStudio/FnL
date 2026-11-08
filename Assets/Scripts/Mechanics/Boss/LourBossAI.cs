@@ -26,7 +26,7 @@ namespace Platformer.Mechanics.Boss
     /// - Defeat / Tactical Retreat: Smokescreen fadeout for reappearance on future flagship galleon.
     /// </summary>
     [RequireComponent(typeof(Health), typeof(Collider2D))]
-    public class LourBossAI : EnemyController, IPlayerHittable
+    public class LourBossAI : EnemyController, IPlayerHittable, IBossEncounter
     {
         public enum BossState
         {
@@ -109,10 +109,12 @@ namespace Platformer.Mechanics.Boss
         private int _currentFrame = 0;
         private bool _isActionLocked = false;
         private bool _isInvincible = false;
+        private Vector3 _homePosition;
 
         protected override void Awake()
         {
             base.Awake();
+            _homePosition = transform.position;
             _health = GetComponent<Health>();
             _rb = GetComponent<Rigidbody2D>();
             _sr = GetComponent<SpriteRenderer>();
@@ -175,13 +177,54 @@ namespace Platformer.Mechanics.Boss
                 _playerTransform = model.player.transform;
             }
 
-            // Initialize Boss Health Bar
+            CreateHealthBar();
+        }
+
+        private void CreateHealthBar()
+        {
+            if (_healthBar != null) Destroy(_healthBar.gameObject);
             GameObject barObj = new GameObject("Lour_HealthBarUI");
             _healthBar = barObj.AddComponent<BossHealthBarUI>();
             _healthBar.Bind(_health, () => isPhase2,
                 "LOUR // SPEC-OPS RECON SNIPER",
                 "PHASE 1: TACTICAL RECON",
                 "PHASE 2: OVERCLOCKED ACCELERATION [CRITICAL]");
+        }
+
+        /// <summary>
+        /// Called when the player respawns. A damaged or displaced Lour goes back to its post at
+        /// full health and phase 1; a defeated one stays gone.
+        /// </summary>
+        public void ResetEncounter()
+        {
+            if (currentState == BossState.Defeated || _health == null) return;
+            bool damaged = _health.CurrentHP < _health.maxHP || isPhase2;
+            bool displaced = (transform.position - _homePosition).sqrMagnitude > 1f;
+            if (!damaged && !displaced) return;
+
+            StopAllCoroutines();
+            _health.ResetHP();
+            isPhase2 = false;
+            currentState = BossState.Intro;
+            _isActionLocked = false;
+            _isInvincible = false;
+            _sniperTimer = 1.0f;
+            _grenadeTimer = 2.5f;
+            _animTimer = 0f;
+            _currentFrame = 0;
+
+            if (aimLaser != null) aimLaser.enabled = false;
+            if (_dashTrail != null) { _dashTrail.enabled = false; _dashTrail.Clear(); }
+            if (_sr != null) _sr.color = Color.white;
+
+            if (_rb != null)
+            {
+                _rb.linearVelocity = Vector2.zero;
+                _rb.position = _homePosition;
+            }
+            transform.SetPositionAndRotation(_homePosition, Quaternion.identity);
+
+            CreateHealthBar();
         }
 
         private void OnDestroy()

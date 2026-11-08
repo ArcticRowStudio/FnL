@@ -14,6 +14,9 @@ namespace Platformer.Gameplay
         public override void Execute()
         {
             var player = model.player;
+            // Retrying from a checkpoint means a fresh boss fight, not the half-finished one.
+            Platformer.Mechanics.Boss.BossEncounters.ResetAll();
+
             player.collider2d.enabled = true;
             player.controlEnabled = false;
             if (player.audioSource && player.respawnAudio)

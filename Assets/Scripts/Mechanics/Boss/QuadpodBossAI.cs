@@ -21,7 +21,7 @@ namespace Platformer.Mechanics.Boss
     /// - 2-phase escalation: Overclocked crimson plasma, faster tracking, wall triangle leaps
     /// </summary>
     [RequireComponent(typeof(Health), typeof(Collider2D))]
-    public class QuadpodBossAI : EnemyController
+    public class QuadpodBossAI : EnemyController, IBossEncounter
     {
         public enum BossState
         {
@@ -160,6 +160,7 @@ namespace Platformer.Mechanics.Boss
         private float _climbDir = 1f;
         private float _climbFireTimer = 0f;
         private bool _deathSequenceDone = false;
+        private Vector3 _homePosition;
 
         // Hold off EnemyDeath (scheduled by whichever weapon lands the last hit) until the defeat
         // sequence has played; otherwise it destroys the boss 0.12 s into the explosions.
@@ -173,6 +174,7 @@ namespace Platformer.Mechanics.Boss
             _bossHealth = GetComponent<Health>();
             _col = GetComponent<Collider2D>();
             _originalScale = transform.localScale;
+            _homePosition = transform.position;
 
             _rb = GetComponent<Rigidbody2D>();
             if (_rb == null) _rb = gameObject.AddComponent<Rigidbody2D>();
@@ -355,11 +357,7 @@ namespace Platformer.Mechanics.Boss
 
         private void Start()
         {
-            // Attach UI health bar (dropping one an earlier play session may have left behind)
-            if (_healthBar != null) Destroy(_healthBar.gameObject);
-            GameObject barObj = new GameObject("QuadpodBoss_HealthBarUI");
-            _healthBar = barObj.AddComponent<BossHealthBarUI>();
-            _healthBar.Bind(this, _bossHealth);
+            CreateHealthBar();
 
             // Start Intro
             currentState = BossState.Intro;
@@ -369,6 +367,65 @@ namespace Platformer.Mechanics.Boss
             {
                 CompleteIntroLanding();
             }
+        }
+
+        // Drops any bar an earlier play session (or an earlier attempt) left behind.
+        private void CreateHealthBar()
+        {
+            if (_healthBar != null) Destroy(_healthBar.gameObject);
+            GameObject barObj = new GameObject("QuadpodBoss_HealthBarUI");
+            _healthBar = barObj.AddComponent<BossHealthBarUI>();
+            _healthBar.Bind(this, _bossHealth);
+        }
+
+        /// <summary>
+        /// Called when the player respawns. A damaged Quadpod goes back to its starting spot at
+        /// full health and phase 1, already landed so the intro slam does not replay; a defeated
+        /// one stays gone.
+        /// </summary>
+        public void ResetEncounter()
+        {
+            if (currentState == BossState.Defeated || _bossHealth == null) return;
+            if (_bossHealth.CurrentHP >= _bossHealth.maxHP && !isPhase2) return;
+
+            StopAllCoroutines();
+            CameraZoomController.ClearFocus(_col);
+            ReleaseFromWall();
+            ResetRuntimeState();
+            _bossHealth.ResetHP();
+            StopAllCoroutines();   // ResetHP raised OnHealthChanged, which starts a damage flash
+
+            if (baseRenderer != null)
+            {
+                if (basePhase1Sprite != null) baseRenderer.sprite = basePhase1Sprite;
+                baseRenderer.color = Color.white;
+            }
+            if (turretRenderer != null)
+            {
+                if (turretPhase1Sprite != null) turretRenderer.sprite = turretPhase1Sprite;
+                turretRenderer.color = Color.white;
+            }
+            if (radarRenderer != null)
+            {
+                if (radarSpinFramesPhase1 != null && radarSpinFramesPhase1.Length > 0)
+                    radarRenderer.sprite = radarSpinFramesPhase1[0];
+                radarRenderer.color = Color.white;
+            }
+
+            SetSquash(1f, 1f);
+            if (_col != null) _col.enabled = true;
+            _rb.bodyType = RigidbodyType2D.Dynamic;
+            _rb.gravityScale = 2.0f;
+            _rb.linearVelocity = Vector2.zero;
+            _rb.rotation = 0f;
+            _rb.position = _homePosition;
+            transform.SetPositionAndRotation(_homePosition, Quaternion.identity);
+
+            CreateHealthBar();
+
+            _hasLandedIntro = true;
+            currentState = BossState.GroundCombat;
+            _nextActionTime = Time.time + 1.5f;
         }
 
         private void OnDestroy()

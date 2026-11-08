@@ -17,7 +17,7 @@ namespace Platformer.Mechanics.Boss
     /// homing missile salvos, support drone deployment, and screen-sweeping mega particle beam.
     /// </summary>
     [RequireComponent(typeof(Health), typeof(Collider2D))]
-    public partial class VtolBossAI : EnemyController
+    public partial class VtolBossAI : EnemyController, IBossEncounter
     {
         public enum BossState
         {
@@ -333,11 +333,15 @@ namespace Platformer.Mechanics.Boss
         private float _lastRoamLegTime;
         private bool _limpingHome;        // phase 3 begun away from the helideck: flying back to crash on it
         private BossOffscreenIndicator _offscreen;
+        // The encounter has been started once (radome opened). Kept through ResetEncounter, so a
+        // retry wakes on the player's arrival instead of waiting for a lever that is already pulled.
+        private bool _encounterUnlocked;
 
         protected override void Awake()
         {
             base.Awake();
             ResetRuntimeState();
+            _encounterUnlocked = false;
             _rb = GetComponent<Rigidbody2D>();
             _col = GetComponent<Collider2D>();
             _bossHealth = GetComponent<Health>();
@@ -506,6 +510,7 @@ namespace Platformer.Mechanics.Boss
 
         void BeginEncounter()
         {
+            _encounterUnlocked = true;
             SetPresence(true);
             SetCockpitExposed(_isPhase3);  // SetPresence turned every renderer on, the weak-point glow too
 
@@ -540,6 +545,42 @@ namespace Platformer.Mechanics.Boss
             bool engaged = currentState != BossState.Hovering
                 || (!_roamLeg && EnsurePlayer() && Mathf.Abs(_player.transform.position.x - _rb.position.x) <= attackRange);
             CameraZoomController.SetFocusEngaged(_col, engaged);
+        }
+
+        /// <summary>
+        /// Called when the player respawns. A fight in progress is called off: the boss goes back
+        /// to dormant at full health with every part rebuilt, and starts over when the player steps
+        /// onto the helideck again. Once it has escaped or been beaten this does nothing.
+        /// </summary>
+        public void ResetEncounter()
+        {
+            if (_bossHealth == null || _escaping) return;
+            if (currentState == BossState.Dormant || currentState == BossState.Defeated || currentState == BossState.Escaping) return;
+
+            _bossHealth.ResetHP();
+            InterruptCurrentAction();   // also stops the hit reaction ResetHP just started
+
+            foreach (var drone in _activeDrones)
+                if (drone != null) Destroy(drone.gameObject);
+            if (_healthBar != null) Destroy(_healthBar);
+            _healthBar = null;
+            RemoveOffscreenIndicator();
+            CameraZoomController.ClearFocus(_col);
+
+            ResetRuntimeState();
+            if (_rb != null)
+            {
+                _rb.gravityScale = 0f;
+                _rb.linearVelocity = Vector2.zero;
+                _rb.angularVelocity = 0f;
+                _rb.rotation = 0f;
+            }
+            transform.rotation = Quaternion.identity;
+            transform.localScale = _originalScale;
+            SetHullColor(_fuselageBaseColor);
+
+            CreateRig();     // fresh pods, ducts and cannon in phase 1 art, part health restored
+            EnterDormant();  // hidden and parked until the player is back on the helideck
         }
 
         void RemoveOffscreenIndicator()
@@ -646,7 +687,7 @@ namespace Platformer.Mechanics.Boss
 
             if (currentState == BossState.Dormant)
             {
-                if (!waitForRadomeLever && PlayerIsOnArenaFloor()) BeginEncounter();
+                if ((!waitForRadomeLever || _encounterUnlocked) && PlayerIsOnArenaFloor()) BeginEncounter();
                 return;
             }
 
