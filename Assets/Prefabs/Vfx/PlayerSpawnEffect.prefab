@@ -141,6 +141,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6d5f074e04cddae44a7a2bc5250bd9bc, type: 3}
   - {fileID: 21300000, guid: e9df0d26193ecc049ae6f89b24deddc9, type: 3}
   framesPerSecond: 24
-  sizeMultiplier: 1
+  sizeMultiplier: 0.7
   startDegrees: 0
   sweepDegrees: 0
